@@ -238,7 +238,7 @@
     0% {
         transform: rotate(34deg);
     }
-    60% {
+    50% {
         left: 563px;
         bottom: 167px;
         transform: rotate(24deg);
@@ -312,11 +312,80 @@
     background-repeat: repeat;
     position: relative;
 }
+.cloud .title{
+    color: #fff;
+}
 .cloud .cloudBoot{
     height: 261px;
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: url('./../src/index/bg-3_2.png')
+    background: url('./../src/index/bg-3_2.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cloud .cloudBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cloud .cloudBox .cloudBg{
+    width: 918px;
+    height: 516px;
+    background: url('./../src/index/bg-3_3.png');
+    background-size: cover;
+}
+.cloud .cloudBox .cloudIntro{
+    width: 1000px;
+    height: 400px;
+    margin-left: -718px;
+    background: #fff;
+    box-shadow:6px 0px 16px rgba(56,50,55,0.2);
+    border-radius: 2px;
+    text-align: left;
+}
+.cloud .cloudBox .cloudIntro .img{
+    height: 300px;
+    width: 453px;
+    margin-right: 2rem;
+    box-shadow: 0 0 4px #999;
+}
+.cloud .cloudBox .cloudIntro .introText .titleSmall{
+    font-size: 24px;
+    color: #184EFF;
+}
+.cloud .cloudBox .cloudIntro .introText .btn_blue{
+    font-size: 16px;
+    color: #184EFF;
+    width: 11rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    border: solid 1px #184EFF;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+
+.company .second{
+    padding: 1rem 0;
+}
+
+.company .companyList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.company .companyList .info{
+    width: 25%;
+    height: 140px;
+    padding: 1rem;
+}
+.company .companyList .info .inner{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ddd;
 }
