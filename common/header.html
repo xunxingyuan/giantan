@@ -1,11 +1,29 @@
 <header>
     <div class="logo"></div>
     <div class="navBox">
-        <a>首页</a>
-        <a>产品中心</a>
-        <a>核心技术</a>
-        <a>解决方案</a>
-        <a>关于极天</a>
+        <div class="navItem">
+            <a href="../index.html">首页</a>
+        </div>
+        <div class="navItem">
+            <a href="../html/product.html">产品中心</a>
+        </div>
+        <div class="navItem">
+            <a href="../html/core.html">核心技术</a>
+        </div>
+        <div class="navItem solution">
+            <div>
+                <a>解决方案</a>
+            </div>
+            <div class="second">
+                <div class="secondItem"><a href="../html/customer.html">智能客服</a></div>
+                <div class="secondItem"><a>运营商客服</a></div>
+                <div class="secondItem"><a>行业知识服务</a></div>
+            </div>
+        </div>
+        <div class="navItem">
+            <a href="../html/about.html">关于极天</a>
+        </div>
+
     </div>
 </header>
 
@@ -16,6 +34,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 15%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
     }
 
     .logo {
@@ -27,13 +50,56 @@
     .navBox {
         color: #fff;
         font-size: 16px;
+        display: flex;
     }
 
-    .navBox a {
-        margin-right: 2rem;
+    .navBox .navItem {
+        height: 5rem;
+        line-height: 5rem;
+        padding-right: 2rem;
         cursor: pointer;
+        position: relative;
+    }
+    .navBox .solution:hover .second{
+        display: block;
     }
 
+    .navBox .navItem .second {
+        display: none;
+        position: absolute;
+        width: 120px;
+        top: 4rem;
+        left: -20px;
+        background: #fff;
+        color: #333;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .navBox .navItem .second::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border: solid 5px transparent;
+        border-bottom: solid 5px #fff;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+    }
+    .navBox .navItem .second .secondItem{
+        height: 1.8rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    .navBox .navItem .second .secondItem a{
+        color: #333;
+    }
+    .navBox .navItem .second .secondItem a:hover{
+        color: #184EFF;
+    }
+
+    .navBox a{
+        color: #fff;
+    }
     .navBox a:hover {
         color: #184EFF;
     }
