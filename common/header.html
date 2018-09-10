@@ -1,13 +1,13 @@
 <header>
     <div class="logo"></div>
     <div class="navBox">
-        <div class="navItem">
+        <div class="navItem index">
             <a href="../index.html">首页</a>
         </div>
-        <div class="navItem">
+        <div class="navItem product">
             <a href="../html/product.html">产品中心</a>
         </div>
-        <div class="navItem">
+        <div class="navItem core">
             <a href="../html/core.html">核心技术</a>
         </div>
         <div class="navItem solution">
@@ -15,12 +15,12 @@
                 <a>解决方案</a>
             </div>
             <div class="second">
-                <div class="secondItem"><a href="../html/customer.html">智能客服</a></div>
+                <div class="secondItem"><a href="../html/solution_customer.html">智能客服</a></div>
                 <div class="secondItem"><a>运营商客服</a></div>
                 <div class="secondItem"><a>行业知识服务</a></div>
             </div>
         </div>
-        <div class="navItem">
+        <div class="navItem about">
             <a href="../html/about.html">关于极天</a>
         </div>
 
@@ -56,11 +56,12 @@
     .navBox .navItem {
         height: 5rem;
         line-height: 5rem;
-        padding-right: 2rem;
+        padding: 0 1rem;
         cursor: pointer;
         position: relative;
     }
-    .navBox .solution:hover .second{
+
+    .navBox .solution:hover .second {
         display: block;
     }
 
@@ -69,13 +70,15 @@
         position: absolute;
         width: 120px;
         top: 4rem;
-        left: -20px;
+        left: -8px;
         background: #fff;
+        border: solid 1px #eee;
         color: #333;
         padding: 10px;
         font-size: 14px;
     }
-    .navBox .navItem .second::before{
+
+    .navBox .navItem .second::before {
         content: '';
         width: 0;
         height: 0;
@@ -85,22 +88,52 @@
         top: -10px;
         left: 30px;
     }
-    .navBox .navItem .second .secondItem{
+
+    .navBox .navItem .second .secondItem {
         height: 1.8rem;
         line-height: 1.8rem;
         text-align: center;
     }
-    .navBox .navItem .second .secondItem a{
+
+    .navBox .navItem .second .secondItem a {
         color: #333;
     }
-    .navBox .navItem .second .secondItem a:hover{
+
+    .navBox .navItem .second .secondItem a:hover {
         color: #184EFF;
     }
 
-    .navBox a{
+    .navBox a {
         color: #fff;
     }
+
     .navBox a:hover {
         color: #184EFF;
     }
+
+    .navBox .active::before {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: RGBA(55, 132, 247, 1);
+        position: absolute;
+        bottom: 0.9rem;
+        left: 25%;
+    }
 </style>
+
+
+<script>
+    //头部激活状态
+    $(document).ready(function () {
+        var path = window.location.pathname
+        var list = ['index', 'product', 'core', 'solution', 'about']
+        $('.navItem').removeClass('active')
+        list.forEach(function (e) {
+            if (path.indexOf(e) > -1) {
+                var activeItem = '.' + e
+                $(activeItem).addClass('active')
+            }
+        })
+    });
+</script>

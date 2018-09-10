@@ -1,4 +1,4 @@
-.banner , .company, .feature, .product, .cloud{
+.banner , .company, .feature, .productBox, .cloud{
     height: 700px;
     width: 100%;
     text-align: center;
@@ -250,50 +250,50 @@
     }
 }
 
-.product {
+.productBox {
     height: 700px;
     padding: 3% 15%;
     text-align: center;
 
 }
-.product .title{
+.productBox .title{
     color: #333;
 }
 
-.product .changeBox .ctrl{
+.productBox .changeBox .ctrl{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.product .changeBox .ctrl .ctrlItem{
+.productBox .changeBox .ctrl .ctrlItem{
     margin: 0 2rem;
     padding: 1rem;
     color: #666666;
     cursor: pointer;
     border: solid 2px #fff;
 }
-.product .changeBox .ctrl .ctrlItem:hover{
+.productBox .changeBox .ctrl .ctrlItem:hover{
     color: #184EFF;
     border-bottom: solid 2px #184EFF; 
 }
-.product .changeBox .ctrl .active{
+.productBox .changeBox .ctrl .active{
     color: #184EFF;
     border-bottom: solid 2px #184EFF;
 }
-.product .changeBox .showBox{
+.productBox .changeBox .showBox{
     margin-top: 1rem;
 }
-.product .changeBox .showBox .itemBox{
+.productBox .changeBox .showBox .itemBox{
     position: relative;
 }
 
-.product .changeBox .showBox .itemBox1 .robot{
+.productBox .changeBox .showBox .itemBox1 .robot{
     height: 432px;
     width: 770px;
     background: url("./../src/index/img.png");
     background-size: contain;
 }
-.product .changeBox .showBox .itemBox1 .robotIntro{
+.productBox .changeBox .showBox .itemBox1 .robotIntro{
     position: absolute;
     width: 600px;
     height: 289px;

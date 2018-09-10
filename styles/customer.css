@@ -1,0 +1,96 @@
+.feather {
+    padding: 5% 15%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feather .title {
+    font-size: 32px;
+    margin: 2rem 0;
+}
+.feather .intro{
+    line-height: 2rem;
+    color: #666;
+}
+
+.feather .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feather .list .left {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.feather .list .right {
+    width: 48%;
+}
+
+.feather .list .listBlock {
+    display: flex;
+    height: 5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background: rgba(231, 231, 231,0.2);
+    border-radius: 2px;
+    box-shadow: 0px 8px 26px 0px rgba(93, 93, 93, 0.2);
+}
+.feather .list .listBlock .number{
+    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 28px;
+    background: linear-gradient(135deg, #fafafa, #eee);
+    position: relative;
+    overflow: hidden;
+}
+.feather .list .listBlock .number::after{
+    content: '';
+    width: 3rem;
+    height: 4rem;
+    background: #fafafa;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -1.1rem;
+    top: 0.9rem;
+}
+
+.corePart{
+    background: #F0F4F9;
+    padding: 5% 15%;
+    text-align: center;
+}
+.corePart .title{
+    font-size: 32px;
+    margin: 2rem 0;
+}
+.corePart .coreBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.corePart .coreBox .coreBlock{
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.corePart .coreBox .coreBlock .icon{
+    margin-right: 1rem;
+}
+.corePart .coreBox .coreBlock .sTitle{
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+.corePart .coreBox .coreBlock span{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}

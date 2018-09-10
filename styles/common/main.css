@@ -56,10 +56,15 @@ a{
 }
 
 .midContent{
-    height: 700px;
-    padding: 0 15%;
+    /* height: 700px; */
+    padding: 5% 15%;
     display: flex;
     align-items: center;
+}
+.midContent .title{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
 }
 .midContent .img{
     padding: 1rem;

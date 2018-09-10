@@ -1,0 +1,28 @@
+.productPart{
+    background: RGBA(25, 28, 39, 1);
+    color: #fff;
+}
+.productPart .title{
+    height: 10rem;
+    line-height: 10rem;
+    font-size: 32px;
+    text-align: center;
+}
+.productPart .chose{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.productPart .chose span{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 14px;
+    padding: 0 2rem;
+    border: solid 1px #fff;
+    /* border-radius: 4px; */
+    margin-left: -1px;
+}
+.productPart .chose .active{
+    background: #fff;
+    color: #333;
+}

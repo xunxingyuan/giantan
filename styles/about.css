@@ -1,0 +1,204 @@
+.aboutBox{
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+    width: 100%;
+    color: #333;
+}
+.aboutBox span{
+    height: 4rem;
+    line-height: 4rem;
+    width: 6rem;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.aboutBox .us{
+    margin-right: 4rem;
+}
+
+.aboutBox .active::after{
+    content: '';
+    width: 6rem;
+    height: 3px;
+    background: linear-gradient(to right, #0073ef, #00abff); 
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.aboutMap{
+    height: 700px;
+}
+
+
+.aboutIntro .introBox{
+    padding: 5% 15%;
+}
+.aboutIntro .introBox .title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.aboutIntro .introBox .intro{
+    padding: 0 10%;
+    display: block;
+    line-height: 1.7;
+    color: #666;
+}
+.aboutIntro .introBox .introItem{
+    flex: 1;
+}
+.aboutIntro .introBox .introItem .img{
+    width: 100%;
+    height: 10rem;
+    border: solid 1px #ddd;
+}
+.aboutIntro .introBox .introItem .titleSmall{
+    font-size: 18px;
+    color: #333;
+    margin: 1rem 0;
+    text-align: center;
+}
+.aboutIntro .introBox .introItem  .smallIntro{
+    font-size: 14px;
+    color: #666;
+}
+.aboutIntro .introBox .mid{
+    margin: 0 3rem;
+}
+
+.aboutIntro .introBox .history{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.aboutIntro .introBox .history::after{
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: #E5EDFA;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.aboutIntro .introBox .history .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.aboutIntro .introBox .history .right{
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+}
+.aboutIntro .introBox .history .left .historyBox{
+    margin-right: 2rem;
+}
+.aboutIntro .introBox .history .left .historyBox::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border: solid 10px transparent;
+    border-left-color: #ddd;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+}
+.aboutIntro .introBox .history .left .historyBox::before{
+    content: '';
+    height: 0;
+    width: 0;
+    border: solid 10px transparent;
+    border-left-color: #fff;
+    position: absolute;
+    right: -19px;
+    top: 20px;
+    z-index: 10;
+}
+.aboutIntro .introBox .history .right .historyBox{
+    margin-left: 2rem;
+}
+
+.aboutIntro .introBox .history .right .historyBox::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border: solid 10px transparent;
+    border-right-color: #ddd;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+}
+.aboutIntro .introBox .history .right .historyBox::before{
+    content: '';
+    height: 0;
+    width: 0;
+    border: solid 10px transparent;
+    border-right-color: #fff;
+    position: absolute;
+    left: -19px;
+    top: 20px;
+    z-index: 10;
+}
+.aboutIntro .introBox .history .left .point{
+    margin-right: -11px;
+}
+.aboutIntro .introBox .history .right .point{
+    margin-left: -9px;
+}
+
+.aboutIntro .introBox .history .historyBox{
+    border: solid 1px #ddd;
+    padding: 1rem;
+    flex: 1;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0 0 17px RGBA(91, 148, 243, 0.2);
+    display: flex;
+}
+
+.aboutIntro .introBox .history .historyBox .titleSmall{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.aboutIntro .introBox .history .historyBox .smallIntro{
+    font-size: 14px;
+    color: #666;
+    display: block;
+}
+.aboutIntro .introBox .history .historyBox .icon{
+    width: 100px;
+    border: solid 1px #ddd;
+    min-width: 100px;
+    margin-right: 1rem;
+    height: 75px;
+}
+
+.aboutIntro .introBox .history  .point{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 10px;
+    background: RGBA(91, 148, 243, 0.2);
+    z-index: 10;
+    align-self: flex-start;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutIntro .introBox .history  .point .inner{
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 4px;
+    background: #5B94F3;
+    z-index: 10;
+    box-shadow: 0 0 22px 3px #5B94F3;
+}
+
