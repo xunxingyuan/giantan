@@ -1,6 +1,7 @@
 .productPart{
     background: RGBA(25, 28, 39, 1);
     color: #fff;
+    margin-top: 5%;
 }
 .productPart .title{
     height: 10rem;
@@ -14,8 +15,8 @@
     justify-content: center;
 }
 .productPart .chose span{
-    height: 3rem;
-    line-height: 3rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     font-size: 14px;
     padding: 0 2rem;
     border: solid 1px #fff;
@@ -25,4 +26,25 @@
 .productPart .chose .active{
     background: #fff;
     color: #333;
+}
+
+.bannerTop{
+    background: url('../src/product/banner.png') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+
+.productPart .midContent .text p{
+    color: #fff;
+}
+.productPart .midContent .text span{
+    color: #fff;
+}
+
+
+.productTitle .title{
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 5%;
 }

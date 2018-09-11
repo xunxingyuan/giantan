@@ -1,8 +1,8 @@
 .banner , .company, .feature, .productBox, .cloud{
-    height: 700px;
+    /* height: 700px; */
     width: 100%;
     text-align: center;
-    padding: 5% 15%;
+    padding: 7% 15%;
 }
 .title{
     font-size: 32px;
@@ -15,11 +15,10 @@
 
 
 .banner {
-    height: 700px;
+    height: 46.875vw;
     width: 100%;
     background: url('./../src/index/bg-1.png');
     background-size: contain;
-    margin-top: -5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,6 +299,43 @@
     background: linear-gradient(to right, #1B55E7, rgb(82, 180, 241));
     left: 500px;
     bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+}
+.productBox .changeBox .showBox .itemBox1 .robotIntro .introText{
+    width: 80%;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.productBox .changeBox .showBox .itemBox1 .robotIntro .icon{
+    width: 20px;
+    height: 20px;
+    background: url('../src/icon.png');
+    position: absolute;
+}
+.productBox .changeBox .showBox .itemBox1 .robotIntro .sign{
+    left: 2rem;
+    top: 2rem;
+    background-position: 3px 5px;
+}
+.productBox .changeBox .showBox .itemBox1 .robotIntro .left{
+    right: 4rem;
+    top: 2rem;
+    background-position: -19px 5px;
+}
+.productBox .changeBox .showBox .itemBox1 .robotIntro .right{
+    right: 2rem;
+    top: 2rem;
+    background-position: -37px 5px;
+}
+.productBox .changeBox .showBox .itemBox1 .robotIntro .go{
+    bottom: 2rem;
+    right: 2rem;
+    background-position: -2px -18px;
 }
 
 
@@ -387,5 +423,12 @@
 .company .companyList .info .inner{
     width: 100%;
     height: 100%;
-    border: solid 1px #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px #ddd; */
+}
+.company .companyList .info .inner img{
+    width: 168px;
+    height: 70px;
 }

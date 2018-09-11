@@ -1,3 +1,9 @@
+.bannerTop {
+    background: url('../src/index/bg-1.png') no-repeat;
+    background-size: cover;
+    height: 46.875vw;
+}
+
 .aboutBox{
     height: 4rem;
     border-bottom: solid 1px #ddd;
@@ -28,6 +34,7 @@
 
 .aboutMap{
     height: 700px;
+    display: none;
 }
 
 
@@ -201,4 +208,63 @@
     z-index: 10;
     box-shadow: 0 0 22px 3px #5B94F3;
 }
+
+
+.aboutMap .mapBox{
+    width: 572px;
+    height: 472px;
+    position: relative;
+}
+
+.aboutMap .mapBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMap .mapBox .location{
+    width: 400px;
+    position: absolute;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 17px RGBA(91, 148, 243, 0.2);
+}
+.aboutMap .mapBox .location .locationTitle{
+    font-size: 18px;
+    color: #333;
+    border-radius: 4px;
+}
+.aboutMap .mapBox .location .intro{
+    font-size: 14px;
+    color: #666;
+}
+
+.aboutMap .mapBox .location .icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url('../src/icon.png');
+    background-position: 23px 0;
+}
+
+
+.aboutMap .mapBox .bj{
+    right: -212px;
+    top: 63px;
+}
+.aboutMap .mapBox .bj .icon{
+    left: 33px;
+    bottom: -23px;
+}
+.aboutMap .mapBox .gz{
+    left: 61px;
+    bottom: 87px;
+}
+.aboutMap .mapBox .gz .icon{
+    right: 33px;
+    bottom: -23px;
+}
+
+
+
 

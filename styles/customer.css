@@ -94,3 +94,30 @@
     font-size: 14px;
     line-height: 1.6;
 }
+
+.corePart .coreBox .coreBlock .icon{
+    display: block;
+    background: url('../src/icon.png');
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+}
+
+.corePart .coreBox .coreBlock .question{
+    background-position: -4px -143px;
+}
+.corePart .coreBox .coreBlock .service{
+    background-position: -4px -201px;
+}
+.corePart .coreBox .coreBlock .data{
+    background-position: -4px -263px;
+}
+.corePart .coreBox .coreBlock .scene{
+    background-position: -4px -322px;
+}
+.corePart .coreBox .coreBlock .talk{
+    background-position: -4px -383px;
+}
+.corePart .coreBox .coreBlock .recommend{
+    background-position: -4px -443px;
+}
