@@ -3,9 +3,9 @@
         <div class="msg">
             <div class="msgtotal">
                 <div class="footlogo"></div>
-                <p>邮箱：current@gzjtit.com</p>
-                <p>电话：020-89269210</p>
-                <p>周一至周日 9:00 - 18:00</p>
+                <p class="flex"><span class="icon mail"></span>songmin@giantan.com</p>
+                <p class="flex"><span class="icon phone"></span>020-89269210</p>
+                <p class="flex"><span class="icon location"></span>广州市海珠区广州大道南788号广一园区A7极天信息</p>
                 <!-- <div class="contact">
                     <p>社交</p>
                 </div> -->
@@ -36,8 +36,16 @@
             </div>
         </div>
         <div class="bootPart">
-            <span>Copyright ©2018 广州极天信息技术股份有限公司</span>
-            <span>粤ICP备14048300号-1 粤ICP备14048300号-3</span>
+            <div class="flex">
+                <p>Copyright ©2018 广州极天信息技术股份有限公司</p> 
+                <div class="icon wechat">
+                    <div class="codeBox">
+                        <img src="../src/QRcode.png" />
+                        <p>微信公众号</p>
+                    </div>
+                </div>
+            </div>
+            <p>粤ICP备14048300号-1 粤ICP备14048300号-3</p>
         </div>
     </div>
 </footer>
@@ -100,5 +108,64 @@
         display: block;
         padding: 5px 0;
         font-size: 14px;
+    }
+
+    footer .icon{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url('./../src/icon.png');
+        margin: 0 5px;
+    }
+    footer .mail{
+        background-position: 1px -48px;
+    }   
+    footer .phone{
+        background-position: 51px -48px;
+    }
+    footer .wechat{
+        width: 22px;
+        height: 22px;
+        background-position: 0 -80px;
+        margin-left: 1rem;
+        cursor: pointer;
+        position: relative;
+    }
+    footer .wechat:hover{
+        background-position: -35px -80px;
+    }
+    footer .wechat:hover .codeBox{
+        display: block;
+    }
+    footer .wechat .codeBox{
+        display: none;
+        position: absolute;
+        width: 88px;
+        height: 105px;
+        top: -115px;
+        left: -2rem;
+        background: #fff;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+    }
+    footer .wechat .codeBox::before{
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: solid 5px transparent;
+        border-top: solid 5px #fff;
+        bottom: -10px;
+        left: 2rem;
+    }
+
+
+    footer .location{
+        background-position: 22px -48px;
+    }
+    footer .flex{
+        display: flex;
+        align-items: center;
     }
 </style>

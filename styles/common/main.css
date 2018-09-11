@@ -49,12 +49,13 @@ a{
 }
 .bannerTop .title{
     font-size: 36px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 .bannerTop .intro{
     font-size: 14px;
     padding: 0 12%;
     display: block;
+    line-height: 1.8;
 }
 
 .midContent{
@@ -105,10 +106,38 @@ a{
     width: 100%;
 }
 
-
-/* .midContent:nth-child(2n) .text{
-    text-align: right
+.company{
+    width: 100%;
+    text-align: center;
+    padding: 7% 15%;
 }
-.midContent:nth-child(2n+1) .text{
-    text-align: left;
-} */
+.company .title{
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.company .second{
+    padding: 1rem 0;
+}
+
+.company .companyList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.company .companyList .info{
+    width: 25%;
+    height: 140px;
+    padding: 1rem;
+}
+.company .companyList .info .inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px #ddd; */
+}
+.company .companyList .info .inner img{
+    width: 168px;
+    height: 70px;
+}

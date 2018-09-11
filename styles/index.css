@@ -291,13 +291,14 @@
     width: 770px;
     background: url("./../src/index/img.png");
     background-size: contain;
+    margin-left: 50px;
 }
 .productBox .changeBox .showBox .itemBox1 .robotIntro{
     position: absolute;
     width: 600px;
     height: 289px;
     background: linear-gradient(to right, #1B55E7, rgb(82, 180, 241));
-    left: 500px;
+    right: -50px;
     bottom: 120px;
     display: flex;
     align-items: center;
@@ -403,32 +404,4 @@
     border: solid 1px #184EFF;
     margin-top: 1rem;
     cursor: pointer;
-}
-
-
-
-.company .second{
-    padding: 1rem 0;
-}
-
-.company .companyList{
-    display: flex;
-    flex-wrap: wrap;
-}
-.company .companyList .info{
-    width: 25%;
-    height: 140px;
-    padding: 1rem;
-}
-.company .companyList .info .inner{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: solid 1px #ddd; */
-}
-.company .companyList .info .inner img{
-    width: 168px;
-    height: 70px;
 }

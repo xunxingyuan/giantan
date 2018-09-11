@@ -48,3 +48,20 @@
     text-align: center;
     margin-top: 5%;
 }
+
+.bannerTop{
+    padding-right: 50%;
+}
+.bannerTop .bannerBlock{
+    text-align: left;
+}
+.bannerTop .bannerBlock .brain{
+    width: 200px;
+    height: 37.67px;
+    background: url('../src/product/G1Brain.png');
+    background-size: 100% 100%;
+    margin-bottom: 2rem;
+}
+.bannerTop .bannerBlock .intro{
+    padding: 0;
+}

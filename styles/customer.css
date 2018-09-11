@@ -1,3 +1,16 @@
+
+.bannerTop{
+    background: url('../src/customer/banner_3.jpg') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+.sceneImg{
+    width: 100%;
+    height: auto;
+    max-width: 1065px;
+    margin: 3rem 0;
+}
+
 .feather {
     padding: 5% 15%;
     text-align: center;
@@ -120,4 +133,30 @@
 }
 .corePart .coreBox .coreBlock .recommend{
     background-position: -4px -443px;
+}
+
+.corePart .valueBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.corePart .valueBox .item{
+    height: 8rem;
+}
+.corePart .valueBox .item:nth-child(2){
+    margin: 0 1rem;
+}
+.corePart .valueBox .item p{
+    height: 4rem;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.corePart .valueBox .item .icon{
+    width: 50px;
+    height: 50px;
+    background: url('../src/icon.png');
+    background-position: -7px -501px;
+    margin-right: 10px;
 }
