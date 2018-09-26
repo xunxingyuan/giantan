@@ -10,18 +10,23 @@
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./js/jquery/jquery.js"></script>
     <script src="./js/common/main.js"></script>
-
+    <script src="./js/jparticles/jparticles.js"></script>
+    <script src="./js/jparticles/particle.js"></script>
 </head>
 
 <body>
     <section class="headerBox"></section>
     <section class="banner">
-        <div>
+        
+    </section>
+    <section id="paricleBg"></section>
+    <section class="bannerText">
+        <div class="contain">
             <p class="bannerTitle">让商业与服务更智能</p>
             <p class="bannerIntro">打造专家型服务机器人，提供普惠的专家服务 </p>
         </div>
     </section>
-    <section class="introList">
+    <section class="introList contain">
         <div class="introItem">
             <p class="keyword">智</p>
             <p class="text">领先的多轮深度会话构建技术，人机交互体验的拟人化和情景化</p>
@@ -36,9 +41,9 @@
         </div>
     </section>
     <section class="feature">
-        <p class="title">我们的核心能力</p>
+        <p class="title">核心技术</p>
         <p class="intro">专注自然语言处理，拥有完全自主知识产权的专利技术，超过10年商业应用积累</p>
-        <div class="featureBox">
+        <div class="featureBox contain">
             <div class="featureItem">
                 <span>01</span>
                 <p>国内最早期的语义计算推行者</p>
@@ -85,8 +90,8 @@
             </div>
         </div>
     </section>
-    <section class="productBox">
-        <p class="title">极天信息领先行业解决方案</p>
+    <section class="productBox contain">
+        <p class="title">解决方案</p>
         <p class="intro">为你提供安全、稳定、合规的云平台，助力企业快速发展</p>
         <div class="changeBox">
             <div class="ctrl">
@@ -106,7 +111,7 @@
                         <span class="icon right"></span>
                         <span class="icon go"></span>
                         <div class="introText">
-                                有别于一问一答机器人，基于多轮问答和专利知识整理技术，为政府、法律、保险等单位或行业快速构建专家机器人
+                            有别于一问一答机器人，基于多轮问答和专利知识整理技术，为政府、法律、保险等单位或行业快速构建专家机器人
                         </div>
                     </div>
                 </div>
@@ -124,9 +129,9 @@
     </section>
     <section class="cloud">
         <div class="cloudBoot"></div>
-        <p class="title">极天信息G1Brain云</p>
+        <p class="title">G1Brain云</p>
         <p class="intro">帮助计算机理解人类的语言和意图并做出反馈</p>
-        <div class="cloudBox">
+        <div class="cloudBox contain">
             <div class="cloudBg"></div>
             <div class="cloudIntro flexCenter">
                 <div class="img">
@@ -142,52 +147,61 @@
             </div>
         </div>
     </section>
-    <section class="company">
+    <section class="company contain">
         <p class="title">合作伙伴</p>
         <div class="companyList">
             <div class="info">
                 <div class="inner">
-                    <img src="./src/index/company/huawei.jpg"/>
+                    <img src="./src/index/company/huawei.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/yongyou.jpg"/>
+                    <img src="./src/index/company/yongyou.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/yidong.jpg"/>
+                    <img src="./src/index/company/yidong.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/dianxin.jpg"/>
+                    <img src="./src/index/company/dianxin.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/mingsheng.jpg"/>
+                    <img src="./src/index/company/mingsheng.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/chuban.jpg"/>
+                    <img src="./src/index/company/chuban.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/guotu.jpg"/>
+                    <img src="./src/index/company/guotu.jpg" />
                 </div>
             </div>
             <div class="info">
                 <div class="inner">
-                        <img src="./src/index/company/zhaolian.jpg"/>
+                    <img src="./src/index/company/zhaolian.jpg" />
                 </div>
             </div>
         </div>
     </section>
     <section class="footerBox"></section>
 </body>
+<script>
+    new JParticles.particle('#paricleBg', {
+        // 两粒子圆心点之间的直线距离为 90
+        proximity: 90,
+        // 定位点半径 100 以内（包含）的所有粒子，圆心点之间小于等于 proximity 值，则连线
+        range: 200,
+        color: ['#fff']
+    });
+</script>
 
 </html>

@@ -6,7 +6,7 @@
 .productPart .title{
     height: 10rem;
     line-height: 10rem;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
 }
 .productPart .chose{
@@ -44,14 +44,12 @@
 
 .productTitle .title{
     width: 100%;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     margin-top: 5%;
 }
 
-.bannerTop{
-    padding-right: 50%;
-}
+
 .bannerTop .bannerBlock{
     text-align: left;
 }
@@ -64,4 +62,5 @@
 }
 .bannerTop .bannerBlock .intro{
     padding: 0;
+    padding-right: 50%;
 }

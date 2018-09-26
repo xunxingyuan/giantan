@@ -12,7 +12,9 @@ body {
     font-family: "PingFang-SC-Regular", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
     color: #333;
     background-color: #fff;
+    min-width: 1000px;
 }
+
 
 p{
     margin: 0;
@@ -24,43 +26,38 @@ p{
     align-items: center;
     justify-content: center;
 }
-.title{
-    font-weight: 600;
-}
-
 
 a{
     text-decoration: none;
 }
 
 .bannerTop{
-    /* height: 550px; */
-    padding: 0 15%;
     padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: url('../../src/index/bg-1.png'); */
+    min-width: 1000px;
     color: #fff;
     text-align: center;
 }
+
 .bannerTop .bannerBlock{
     width: 100%;
 }
 .bannerTop .title{
-    font-size: 36px;
+    font-size: 3rem;
     margin-bottom: 1.8rem;
 }
 .bannerTop .intro{
     font-size: 14px;
-    padding: 0 12%;
+    padding: 0 20%;
     display: block;
     line-height: 1.8;
 }
 
 .midContent{
     /* height: 700px; */
-    padding: 5% 15%;
+    padding: 5% 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +65,7 @@ a{
 .midContent .title{
     text-align: center;
     width: 100%;
-    font-size: 32px;
+    font-size: 2rem;
 }
 .midContent .img{
     padding: 1rem;
@@ -93,11 +90,10 @@ a{
     padding: 1rem;
 }
 .midContent .text p{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: RGBA(51, 51, 51, 1);
     margin-bottom: 1rem;
     width: 100%;
-    font-weight: 600;
 }
 
 .midContent .text span{
@@ -109,10 +105,11 @@ a{
 .company{
     width: 100%;
     text-align: center;
-    padding: 7% 15%;
+    padding: 5% 0;
+    /* padding: 7% 15%; */
 }
 .company .title{
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -140,4 +137,11 @@ a{
 .company .companyList .info .inner img{
     width: 168px;
     height: 70px;
+}
+
+.contain{
+    max-width: 1200px;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }

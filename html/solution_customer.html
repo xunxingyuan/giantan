@@ -25,33 +25,47 @@
 
         </div>
     </section>
-    <section class="feather">
-        <p class="title">业务痛点</p>
-        <div class="list">
+    <section class="feather contain featherIntro">
+        <p class="title">行业背景</p>
+        <div class="bgPart">
+            <div class="introBox">
+                <p class="title">人力成本高</p>
+                <span>人力成本越来越高，机械重复的工作难留住人才，需要机器人接管</span>
+            </div>
+            <div class="introBox">
+                <p class="title">服务效率、质量难提高</p>
+                <span>普通客服难以对所有客户咨询的问题进行准确分类，专业问题难以及时为客户解决</span>
+            </div>
+            <div class="introBox">
+                <p class="title">问题&风险识别</p>
+                <span>对客户会话过程中的焦点问题和关键风险进行识别</span>
+            </div>
+        </div>
+        <!-- <div class="list">
             <div class="listBlock left">
                 <span class="number">1</span>
-                <p>人力成本越来越高相应企业运营成本增加</p>
+                <p>人力成本越来越高，机械重复的工作难留住人才，需要机器人接管</p>
             </div>
             <div class="listBlock right">
                 <span class="number">2</span>
-                <p>人力成本越来越高相应企业运营成本增加</p>
+                <p>普通客服难以对所有客户咨询的问题进行准确分类，专业问题难以及时为客户解决</p>
             </div>
             <div class="listBlock left">
                 <span class="number">3</span>
-                <p>人力成本越来越高相应企业运营成本增加</p>
+                <p>对客户会话过程中的焦点问题和关键风险进行识别</p>
             </div>
             <div class="listBlock right">
                 <span class="number">4</span>
                 <p>人力成本越来越高相应企业运营成本增加</p>
             </div>
-        </div>
-        <p class="title">方案概括</p>
+        </div> -->
+        <p class="title">方案介绍</p>
         <span class="intro">基于上述挑战，极天信息基于 GBot®
             产品，面向运营商、银行、旅游、教育等诸多行业的机构或企业，打造了专业的智能客户服务解决方案，核心在于让智能机器人与客户全渠道连接，扮演“专业客服”角色，基于自然语言处理技术理解客户意图，以拟人化方式为客户实时提供咨询、交互引导、业务办理、精准营销等智能化服务。针对客户的不同需求和应用场景，提供本地化部署和云服务两种交付方式</span>
     </section>
     <section class="corePart">
         <p class="title">核心功能</p>
-        <div class="coreBox">
+        <div class="coreBox contain">
             <div class="coreBlock">
                 <div class="icon question"></div>
                 <div>
@@ -97,14 +111,41 @@
             </div>
         </div>
     </section>
+    <section class="scene feather">
+        <div class="topPart">
+            <p class="title">应用场景</p>
+        </div>
+        <div class="midScene">
+            <div class="midBlock">
+                <div class="sceneBlock active" data-id="1">
+                    <img src="../src/index/company/yidong.jpg" />
+                    <p class="sceneTitle">北京移动</p>
+                    <span>北京移动多个客服渠道使用了极天的智能客服机器人解决方案，在面对每天数十万的咨询量的压力下，依然保证稳定、准确、高效的服务体验。</span>
+                </div>
+                <div class="sceneBlock" data-id="2">
+                    <img src="../src/index/company/yidong.jpg" />
+                    <p class="sceneTitle">北京移动</p>
+                    <span>北京移动多个客服渠道使用了极天的智能客服机器人解决方案，在面对每天数十万的咨询量的压力下，依然保证稳定、准确、高效的服务体验。</span>
+                </div>
+                <div class="sceneBlock" data-id="3">
+                    <img src="../src/index/company/yidong.jpg" />
+                    <p class="sceneTitle">北京移动</p>
+                    <span>北京移动多个客服渠道使用了极天的智能客服机器人解决方案，在面对每天数十万的咨询量的压力下，依然保证稳定、准确、高效的服务体验。</span>
+                </div>
+            </div>
 
-    <section class="feather">
+        </div>
+        <div class="map">
+
+        </div>
+    </section>
+    <!-- <section class="feather contain">
         <p class="title">场景解读</p>
         <img class="sceneImg" src="../src/customer/changj.png" />
     </section>
-    <section class="corePart" style="padding: 5% 10%;padding-bottom: 10%;">
+    <section class="corePart" style="padding-bottom: 10%;">
         <p class="title">业务价值</p>
-        <div class="valueBox">
+        <div class="valueBox contain">
             <div class="item">
                     <p><span class="icon valueIcon"></span>大幅降低成本，提高效率</p>
                     <p><span class="icon valueIcon"></span>基于数据分析优化业务及服务</p>
@@ -118,8 +159,19 @@
                     <p></p>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="footerBox"></section>
 </body>
+<script>
+    $('.sceneBlock').on('click', function (e) {
+        var clickId = $(this).data('id')
+        var moveLen = '-' + ((clickId - 1) * 41 + 20.5) + 'rem'
+        $('.sceneBlock').removeClass('active');
+        $('.midBlock').animate({
+            left: moveLen
+        });
+        $(this).addClass('active');
+    });
+</script>
 
 </html>

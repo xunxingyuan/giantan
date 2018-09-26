@@ -1,45 +1,50 @@
-<header>
-    <div class="logo"></div>
-    <div class="navBox">
-        <div class="navItem index">
-            <a href="../index.html">首页</a>
-        </div>
-        <div class="navItem product">
-            <a href="../html/product.html">产品中心</a>
-        </div>
-        <div class="navItem core">
-            <a href="../html/core.html">核心技术</a>
-        </div>
-        <div class="navItem solution">
-            <div>
-                <a>解决方案</a>
+<div class="headerBox">
+    <header class="contain">
+        <div class="logo"></div>
+        <div class="navBox">
+            <div class="navItem index">
+                <a href="../index.html">首页</a>
             </div>
-            <div class="second">
-                <div class="secondItem"><a href="../html/solution_customer.html">智能客服</a></div>
-                <div class="secondItem"><a>运营商客服</a></div>
-                <div class="secondItem"><a>行业知识服务</a></div>
+            <div class="navItem product">
+                <a href="../html/product.html">核心产品</a>
             </div>
+            <div class="navItem core">
+                <a href="../html/core.html">核心技术</a>
+            </div>
+            <div class="navItem solution">
+                <div>
+                    <a>解决方案</a>
+                </div>
+                <div class="second">
+                    <div class="secondItem"><a href="../html/solution_customer.html">智能客服</a></div>
+                    <div class="secondItem"><a>运营商客服</a></div>
+                    <div class="secondItem"><a>行业知识服务</a></div>
+                </div>
+            </div>
+            <div class="navItem about">
+                <a href="../html/about.html">关于极天</a>
+            </div>
+    
         </div>
-        <div class="navItem about">
-            <a href="../html/about.html">关于极天</a>
-        </div>
+    </header>
+</div>
 
-    </div>
-</header>
 
 <style>
-    header {
-        height: 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 15%;
+    .headerBox{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100;
     }
+    header {
+        height: 66px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 15%; */
+        }
 
     .logo {
         width: 146px;
@@ -48,7 +53,7 @@
     }
 
     .navBox {
-        color: #fff;
+        /* color: #fff; */
         font-size: 16px;
         display: flex;
     }

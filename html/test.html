@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <canvas id='test' width="300" height="300"></canvas>
-    <canvas id='test2' width="300" height="300"></canvas>
+    <!-- <canvas id='test' width="300" height="300"></canvas>
+    <canvas id='test2' width="300" height="300"></canvas> -->
+    <canvas id='test3' width="1000" height="461"></canvas>
 </body>
 <style>
     #test {
@@ -20,6 +21,13 @@
     }
     #test2{
         border: solid 1px #ddd;
+    }
+    #test3{
+        border: solid 1px #ddd;
+    }
+    html,body{
+        margin: 0;
+        padding: 0;
     }
 </style>
 <script>
@@ -74,8 +82,30 @@
         ctx.fill();
         
     }
-    draw();
-    draw1();
+    function draw3(){
+        var canvas = document.getElementById('test3');
+        if (!canvas.getContext) return;
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle="#12172C";
+        ctx.fillRect(0,0,1000,461); 
+
+        var img = new Image();
+        img.src = "../src/index/bg-2.png"
+        img.onload = function () {
+            ctx.drawImage(this,0,0,1000,461)
+
+        }
+        ctx.beginPath();
+        ctx.fillStyle="#92D2FB";
+        ctx.arc(445, 145, 20, 0, Math.PI*2, false);
+        ctx.fill();
+        ctx.font = "14px sans-serif"
+        ctx.fillStyle="#333";
+        ctx.fillText("苹果", 431, 150);
+    }
+    // draw();
+    // draw1();
+    draw3();
 </script>
 
 </html>

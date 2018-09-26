@@ -1,8 +1,5 @@
 .banner , .company, .feature, .productBox, .cloud{
-    /* height: 700px; */
-    width: 100%;
     text-align: center;
-    padding: 7% 15%;
 }
 .title{
     font-size: 32px;
@@ -13,9 +10,18 @@
     padding: 1rem 0;
 }
 
+#paricleBg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 
 .banner {
-    height: 46.875vw;
+    height: 100vh;
     width: 100%;
     background: url('./../src/index/bg-1.png');
     background-size: contain;
@@ -24,16 +30,30 @@
     justify-content: center;
 }
 
-.banner p {
+.bannerText{
+    z-index: 11;
+    height: 5rem;
+    margin-top: -2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+}
+
+.bannerText p {
     color: #fff;
 }
 
-.banner .bannerTitle {
-    font-size: 52px;
+.bannerText .bannerTitle {
+    font-size: 4rem;
 }
 
-.banner .bannerIntro {
-    font-size: 23px;
+.bannerText .bannerIntro {
+    font-size:  2rem;
     padding: 1rem 0;
 }
 
@@ -42,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15%;
+    /* padding: 0 15%; */
 }
 
 .introList .introItem {
@@ -68,11 +88,11 @@
 }
 
 .feature {
-    height: 700px;
+    /* height: 700px; */
     width: 100%;
     background: #12172C;
     text-align: center;
-    padding: 6% 0;
+    padding: 5% 0;
     position: relative;
 }
 
@@ -86,7 +106,6 @@
 }
 
 .feature .featureBox {
-    padding-left: 60%;
     margin-top: 4rem;
     z-index: 10;
 }
@@ -95,6 +114,7 @@
     position: relative;
     text-align: left;
     z-index: 10;
+    margin-left: 60%;
 }
 
 .feature .featureBox .featureItem span {
@@ -250,8 +270,7 @@
 }
 
 .productBox {
-    height: 700px;
-    padding: 3% 15%;
+    padding: 5% 0;
     text-align: center;
 
 }
@@ -342,8 +361,7 @@
 
 
 .cloud{
-    height: 700px;
-    padding: 3% 15%;
+    padding: 5% 0;
     text-align: center;
     background: url('./../src/index/bg-3_1.png');
     background-repeat: repeat;

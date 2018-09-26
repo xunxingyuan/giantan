@@ -7,8 +7,10 @@ $(document).ready(function () {
 //修改header背景
 $(document).scroll(function(e){
     if($(this).scrollTop()=== 0){
-        $('header').css('background','transparent');
+        $('.headerBox').css('background','transparent');
+        $('.navBox a').css('color','#fff');
     }else{
-        $('header').css('background','#142132');
+        $('.headerBox').css('background','#fff');
+        $('.navBox a').css('color','#333');
     }
 });

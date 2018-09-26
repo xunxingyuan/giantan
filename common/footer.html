@@ -1,71 +1,71 @@
 <footer>
-    <div class="contain">
-        <div class="msg">
-            <div class="msgtotal">
-                <div class="footlogo"></div>
-                <p class="flex"><span class="icon mail"></span>songmin@giantan.com</p>
-                <p class="flex"><span class="icon phone"></span>020-89269210</p>
-                <p class="flex"><span class="icon location"></span>广州市海珠区广州大道南788号广一园区A7极天信息</p>
-                <!-- <div class="contact">
-                    <p>社交</p>
-                </div> -->
-            </div>
-            <div class="listItem">
-                <p class="listTitle">产品</p>
-                <a>G1Brain</a>
-                <a>功能</a>
-                <a>价格</a>
-                <a>场景</a>
-                <a>更新日志</a>
-            </div>
-            <div class="listItem">
-                <p class="listTitle">解决方案</p>
-                <a>智能客服</a>
-                <a>出版传媒</a>
-                <a>运营商客服工单</a>
-                <a>行业知识服务</a>
-                <a>智能在线推广平台</a>
-            </div>
-            <div class="listItem">
-                <p class="listTitle">公司介绍</p>
-                <a>关于我们</a>
-                <a>核心理念</a>
-                <a>发展里程</a>
-                <a>荣誉资质</a>
-                <a>媒体报道</a>
-            </div>
-        </div>
-        <div class="bootPart">
-            <div class="flex">
-                <p>Copyright ©2018 广州极天信息技术股份有限公司</p> 
-                <div class="icon wechat">
-                    <div class="codeBox">
-                        <img src="../src/QRcode.png" />
-                        <p>微信公众号</p>
-                    </div>
+        <div class="footerInner contain">
+            <div class="msg">
+                <div class="msgtotal">
+                    <div class="footlogo"></div>
+                    <p class="flex"><span class="icon mail"></span>songmin@giantan.com</p>
+                    <p class="flex"><span class="icon phone"></span>020-89269210</p>
+                    <p class="flex"><span class="icon location"></span>广州市海珠区广州大道南788号广一园区A7极天信息</p>
+                    <!-- <div class="contact">
+                                <p>社交</p>
+                            </div> -->
+                </div>
+                <div class="listItem">
+                    <p class="listTitle">产品</p>
+                    <a>G1Brain</a>
+                    <a>功能</a>
+                    <a>价格</a>
+                    <a>场景</a>
+                    <a>更新日志</a>
+                </div>
+                <div class="listItem">
+                    <p class="listTitle">解决方案</p>
+                    <a>智能客服</a>
+                    <a>出版传媒</a>
+                    <a>运营商客服工单</a>
+                    <a>行业知识服务</a>
+                    <a>智能在线推广平台</a>
+                </div>
+                <div class="listItem">
+                    <p class="listTitle">公司介绍</p>
+                    <a>关于我们</a>
+                    <a>核心理念</a>
+                    <a>发展里程</a>
+                    <a>荣誉资质</a>
+                    <a>媒体报道</a>
                 </div>
             </div>
-            <p>粤ICP备14048300号-1 粤ICP备14048300号-3</p>
+            <div class="bootPart">
+                <div class="flex">
+                    <p>Copyright ©2018 广州极天信息技术股份有限公司</p>
+                    <div class="icon wechat">
+                        <div class="codeBox">
+                            <img src="../src/QRcode.png" />
+                            <p>微信公众号</p>
+                        </div>
+                    </div>
+                </div>
+                <p>粤ICP备14048300号-1 粤ICP备14048300号-3</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
 
 <style>
     footer {
         height: 350px;
+        width: 100%;
         background: url('./../src/index/bg-4.png');
         background-size: contain;
-        padding: 4% 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: #fff;
     }
-    footer .contain{
+    footer .footerInner{
         height: 100%;
-        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
-    footer .bootPart{
+    footer .bootPart {
         padding: 1rem 0;
         border-top: solid 1px #fff;
         margin-top: 1rem;
@@ -82,48 +82,57 @@
         justify-content: space-between;
         width: 100%;
     }
-    footer .msg .msgtotal{
+
+    footer .msg .msgtotal {
         color: #999;
         font-size: 14px;
     }
-    footer .msg .msgtotal .footlogo{
+
+    footer .msg .msgtotal .footlogo {
         /* width: 300px; */
         height: 60px;
         width: 150px;
         background: url("./../src/index/logo_2.png");
         margin-bottom: 1.5rem;
     }
-    footer .msg .msgtotal p{
+
+    footer .msg .msgtotal p {
         padding: 0.5rem 0;
     }
-    footer .msg .listItem{
+
+    footer .msg .listItem {
         color: #999;
-        
+
     }
-    footer .msg .listItem .listTitle{
+
+    footer .msg .listItem .listTitle {
         padding: 1rem 0;
         color: #fff;
     }
-    footer .msg .listItem a{
+
+    footer .msg .listItem a {
         display: block;
         padding: 5px 0;
         font-size: 14px;
     }
 
-    footer .icon{
+    footer .icon {
         display: inline-block;
         width: 20px;
         height: 20px;
         background: url('./../src/icon.png');
         margin: 0 5px;
     }
-    footer .mail{
+
+    footer .mail {
         background-position: 1px -48px;
-    }   
-    footer .phone{
+    }
+
+    footer .phone {
         background-position: 51px -48px;
     }
-    footer .wechat{
+
+    footer .wechat {
         width: 22px;
         height: 22px;
         background-position: 0 -80px;
@@ -131,13 +140,16 @@
         cursor: pointer;
         position: relative;
     }
-    footer .wechat:hover{
+
+    footer .wechat:hover {
         background-position: -35px -80px;
     }
-    footer .wechat:hover .codeBox{
+
+    footer .wechat:hover .codeBox {
         display: block;
     }
-    footer .wechat .codeBox{
+
+    footer .wechat .codeBox {
         display: none;
         position: absolute;
         width: 88px;
@@ -149,7 +161,8 @@
         font-size: 14px;
         color: #333;
     }
-    footer .wechat .codeBox::before{
+
+    footer .wechat .codeBox::before {
         content: '';
         width: 0;
         height: 0;
@@ -161,10 +174,11 @@
     }
 
 
-    footer .location{
+    footer .location {
         background-position: 22px -48px;
     }
-    footer .flex{
+
+    footer .flex {
         display: flex;
         align-items: center;
     }

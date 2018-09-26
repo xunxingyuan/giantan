@@ -40,10 +40,10 @@
 
 
 .aboutIntro .introBox{
-    padding: 5% 15%;
+    padding: 5% 0;
 }
 .aboutIntro .introBox .title{
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -55,16 +55,18 @@
 }
 .aboutIntro .introBox .introItem{
     flex: 1;
+    max-width: 360px;
 }
 .aboutIntro .introBox .introItem .img{
     width: 100%;
-    height: 10rem;
+    height: auto;
     /* border: solid 1px #ddd; */
 }
 
 .aboutIntro .introBox .introItem .img img{
+    max-width: 360px;
     width: 100%;
-    height: 10rem;
+    height: auto;
     /* border: solid 1px #ddd; */
 }
 
