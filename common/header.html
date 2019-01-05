@@ -3,48 +3,50 @@
         <div class="logo"></div>
         <div class="navBox">
             <div class="navItem index">
-                <a href="../index.html">首页</a>
+                <a class='link' href="../index.html">首页</a>
             </div>
             <div class="navItem product">
-                <a href="../html/product.html">核心产品</a>
+                <a class='link' href="../html/product.html">核心产品</a>
             </div>
-            <div class="navItem core">
-                <a href="../html/core.html">核心技术</a>
-            </div>
+            <!-- <div class="navItem core">
+                <a class='link' href="../html/core.html">核心技术</a>
+            </div> -->
             <div class="navItem solution">
                 <div>
-                    <a>解决方案</a>
+                    <a class='link'>解决方案</a>
                 </div>
                 <div class="second">
-                    <div class="secondItem"><a href="../html/solution_customer.html">智能客服</a></div>
-                    <div class="secondItem"><a>运营商客服</a></div>
-                    <div class="secondItem"><a>行业知识服务</a></div>
+                    <div class="secondItem"><a href="../html/solution_customer.html">智慧专家解决方案</a></div>
+                    <div class="secondItem"><a href="../html/solution_search.html">智能搜索解决方案</a></div>
+                    <div class="secondItem"><a href="../html/solution_order.html">智能工单分析解决方案</a></div>
+                    <div class="secondItem"><a href="../html/solution_media.html">智能出版传媒解决方案</a></div>
                 </div>
             </div>
             <div class="navItem about">
-                <a href="../html/about.html">关于极天</a>
+                <a class='link' href="../html/about.html">关于极天</a>
             </div>
-    
+
         </div>
     </header>
 </div>
 
 
 <style>
-    .headerBox{
+    .headerBox {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100;
     }
+
     header {
         height: 66px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         /* padding: 0 15%; */
-        }
+    }
 
     .logo {
         width: 146px;
@@ -73,14 +75,15 @@
     .navBox .navItem .second {
         display: none;
         position: absolute;
-        width: 120px;
+        width: 180px;
         top: 4rem;
         left: -8px;
         background: #fff;
         border: solid 1px #eee;
         color: #333;
-        padding: 10px;
+        padding: 10px 1rem;
         font-size: 14px;
+
     }
 
     .navBox .navItem .second::before {
@@ -97,7 +100,7 @@
     .navBox .navItem .second .secondItem {
         height: 1.8rem;
         line-height: 1.8rem;
-        text-align: center;
+        text-align: left;
     }
 
     .navBox .navItem .second .secondItem a {

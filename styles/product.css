@@ -1,20 +1,23 @@
-.productPart{
+.productPart {
     background: RGBA(25, 28, 39, 1);
     color: #fff;
     margin-top: 5%;
 }
-.productPart .title{
+
+.productPart .title {
     height: 10rem;
     line-height: 10rem;
     font-size: 2rem;
     text-align: center;
 }
-.productPart .chose{
+
+.productPart .chose {
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.productPart .chose span{
+
+.productPart .chose span {
     height: 2.5rem;
     line-height: 2.5rem;
     font-size: 14px;
@@ -23,26 +26,28 @@
     /* border-radius: 4px; */
     margin-left: -1px;
 }
-.productPart .chose .active{
+
+.productPart .chose .active {
     background: #fff;
     color: #333;
 }
 
-.bannerTop{
+.bannerTop {
     background: url('../src/product/banner.png') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
 
-.productPart .midContent .text p{
+.productPart .midContent .text p {
     color: #fff;
 }
-.productPart .midContent .text span{
+
+.productPart .midContent .text span {
     color: #fff;
 }
 
 
-.productTitle .title{
+.productTitle .title {
     width: 100%;
     font-size: 2rem;
     text-align: center;
@@ -50,17 +55,86 @@
 }
 
 
-.bannerTop .bannerBlock{
+.bannerTop .bannerBlock {
     text-align: left;
 }
-.bannerTop .bannerBlock .brain{
+
+.bannerTop .bannerBlock .brain {
     width: 200px;
     height: 37.67px;
     background: url('../src/product/G1Brain.png');
     background-size: 100% 100%;
     margin-bottom: 2rem;
 }
-.bannerTop .bannerBlock .intro{
+
+.bannerTop .bannerBlock .intro {
     padding: 0;
     padding-right: 50%;
+}
+
+
+.productIntro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 5%;
+    color: #666;
+}
+
+.productIntro .icon {
+    font-size: 70px;
+    color: #999;
+    margin-top: 5rem;
+}
+
+
+.productIntro .introBox .introTilte {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 24px;
+    color: #000;
+}
+
+.productIntro .introBox .introContain {
+    border: solid 1px #ddd;
+    text-align: center;
+    padding: 2rem;
+    height: 25rem;
+    width: 16rem;
+    box-shadow: 0 0 40px #999;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.productIntro .introBox .introContain .introPoint {
+    font-size: 18px;
+    color: #333;
+}
+
+.productIntro .introBox .introContain .introImg {
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+    border: solid 1px #ddd;
+    margin: 1rem 0;
+}
+
+
+.productIntro .introBox .introContain .itemTitle {
+    font-size: 16px;
+    align-self: flex-start;
+    color: #333;
+    margin: 5px 0;
+}
+
+.productIntro .introBox .introContain .itemContent {
+    font-size: 14px;
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.productIntro .introBox .introContain .itemContent p {
+    margin-bottom: 5px;
 }
