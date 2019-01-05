@@ -58,33 +58,68 @@
 }
 
 .introList {
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
     /* padding: 0 15%; */
 }
+.cornerContain{
+    position: relative;
+}
+
+.cornerContain .leftConer,.RightConer {
+    height: 6rem;
+    width: 100%;
+    position: absolute;
+    top: -6rem;
+    background-image: radial-gradient(at 50% 0%, 
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 71%,
+    #fff 0%
+    );
+
+    /* background: linear-gradient(to bottom right, transparent, transparent 70%, #fff); */
+}
+.cornerContain .leftConer{
+    left: 0;
+}
+.cornerContain .RightConer{
+    right: 0;
+}
+
 
 .introList .introItem {
-    padding: 0 2rem;
+    padding: 0 1rem 3rem 1rem;
+    box-shadow:0px 2px 4px 0px rgba(187,187,187,0.5);
+    display: flex;
+    flex-flow: column;
 }
 
 .introList .introItem:nth-child(2) {
-    border-left: solid 1px #eee;
-    border-right: solid 1px #eee;
+    margin: 0 2rem;
 }
 
 .introList .introItem .keyword {
-    font-size: 30px;
-    color: #184EFF;
+    font-size: 2rem;
+    color: #0378F5;
     margin: 0;
+    width: 2rem;
+    padding-top: 1rem;
+    border-top: solid 2px #0378F5;
+}
+.introList .introItem .three{
+    width: 6rem;
 }
 
 .introList .introItem .text {
     margin: 0;
     color: #666;
     font-size: 14px;
-    padding: 8px 0;
+    padding-top: 1rem;
 }
 
 .feature {
@@ -270,92 +305,66 @@
 }
 
 .productBox {
-    padding: 5% 0;
-    text-align: center;
-
+    background: #142132;
 }
 .productBox .title{
-    color: #333;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.productBox  .smallTitle{
+    text-align: left;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.productBox .productContent{
+    color: #D9D9D9;
+}
+.productBox .changeBox{
+    display: flex;
 }
 
 .productBox .changeBox .ctrl{
     display: flex;
-    align-items: center;
+    flex-flow: column;
     justify-content: center;
+    background: rgba(0,0,0,0.1);
+    padding: 10rem 0;
 }
 .productBox .changeBox .ctrl .ctrlItem{
-    margin: 0 2rem;
-    padding: 1rem;
-    color: #666666;
+    /* margin: 0 2rem; */
+    /* padding: 1rem; */
+    width: 16rem;
+    height: 6rem;
+    min-height: 6rem;
+    line-height: 6rem;
+    text-align: left;
+    color: #fff;
     cursor: pointer;
-    border: solid 2px #fff;
+    padding: 0 2rem;
 }
 .productBox .changeBox .ctrl .ctrlItem:hover{
-    color: #184EFF;
-    border-bottom: solid 2px #184EFF; 
+    border-left: solid 2px #2B86F6;
+    background: linear-gradient(to right,#3E4052,transparent);
 }
 .productBox .changeBox .ctrl .active{
-    color: #184EFF;
-    border-bottom: solid 2px #184EFF;
+    border-left: solid 2px #2B86F6;
+    background: linear-gradient(to right,#3E4052,transparent);
 }
 .productBox .changeBox .showBox{
-    margin-top: 1rem;
-}
-.productBox .changeBox .showBox .itemBox{
-    position: relative;
-}
-
-.productBox .changeBox .showBox .itemBox1 .robot{
-    height: 432px;
-    width: 770px;
-    background: url("./../src/index/img.png");
-    background-size: contain;
-    margin-left: 50px;
-}
-.productBox .changeBox .showBox .itemBox1 .robotIntro{
-    position: absolute;
-    width: 600px;
-    height: 289px;
-    background: linear-gradient(to right, #1B55E7, rgb(82, 180, 241));
-    right: -50px;
-    bottom: 120px;
+    padding: 0 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    color: #fff;
 }
-.productBox .changeBox .showBox .itemBox1 .robotIntro .introText{
-    width: 80%;
-    line-height: 1.8;
-    text-align: left;
+.productBox .changeBox .showBox .itemBox{
+    position: relative;
+    display: none;
 }
 
-.productBox .changeBox .showBox .itemBox1 .robotIntro .icon{
-    width: 20px;
-    height: 20px;
-    background: url('../src/icon.png');
-    position: absolute;
-}
-.productBox .changeBox .showBox .itemBox1 .robotIntro .sign{
-    left: 2rem;
-    top: 2rem;
-    background-position: 3px 5px;
-}
-.productBox .changeBox .showBox .itemBox1 .robotIntro .left{
-    right: 4rem;
-    top: 2rem;
-    background-position: -19px 5px;
-}
-.productBox .changeBox .showBox .itemBox1 .robotIntro .right{
-    right: 2rem;
-    top: 2rem;
-    background-position: -37px 5px;
-}
-.productBox .changeBox .showBox .itemBox1 .robotIntro .go{
-    bottom: 2rem;
-    right: 2rem;
-    background-position: -2px -18px;
+.productBox .changeBox .showBox .itemBox1{
+    display: block;
 }
 
 

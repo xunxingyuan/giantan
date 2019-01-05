@@ -5,8 +5,11 @@ $(document).ready(function () {
 
     $('.ctrlItem').bind('click', function (e) {
         console.log(e)
-        $('.ctrlItem').removeClass('active')
-        $(this).addClass('active')
+        var index = $('.ctrlItem').index(this)
+        $('.ctrlItem').removeClass('active');
+        $(this).addClass('active');
+        $('.itemBox').css('display','none');
+        $(".itemBox:eq(" + index + ")").css('display','block');
     });
 });
 

@@ -88,6 +88,12 @@ a{
 .midContent .text{
     flex: 1;
     padding: 1rem;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.midContent .leftText{
+    text-align: right;
 }
 .midContent .text p{
     font-size: 1.5rem;
@@ -144,4 +150,96 @@ a{
     min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.commonBtn{
+    width: 11rem;
+    height: 3rem;
+    background:rgba(43,134,246,1);
+    box-shadow:0rem 0rem 0rem 0rem rgba(29,106,200,0.8);
+    border-radius: 3px;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.normalBtn{
+    width: 11rem;
+    height: 3rem;
+    border-radius: 3px;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: solid 2px #fff;
+}
+
+.grayBox{
+    background: #F0F4F9;
+    padding: 6rem 0;
+}
+.grayBox .innerBox{
+    max-width: 1200px;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grayBox .innerBox .boxTitle{
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.grayBox .innerBox .boxSmallTitle{
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.grayBox .innerBox .boxContent{
+    color: #666666;
+    font-size: 1rem;
+    text-align: center;
+}
+.grayBox .innerBox .boxItem{
+    display: flex;
+    margin-top: 4rem;
+}
+.grayBox .innerBox .boxItem .leftImg{
+    flex: 5;
+    height: 30rem;
+    border: solid 1px #ddd;
+    margin-right: 4rem;
+}
+.grayBox .innerBox .boxItem .itemIntro{
+    flex: 4;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-right: 1rem;
+}
+.grayBox .innerBox .boxItem .itemIntro .boxContent{
+    text-align: left;
+}
+
+
+.grayBox .innerBox .boxItem .halfPart{
+    flex: 1;
+}
+.grayBox .innerBox .boxItem .halfPart .halfItem{
+    display: flex;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+}
+.grayBox .innerBox .boxItem .halfPart .itemIcon{
+    width: 3rem;
+    height: 3rem;
+    border: solid 1px #ddd;
+    margin-right: 2rem;
+}
+.grayBox .innerBox .boxItem .halfPart .itemIntro{
+    color: #333333;
 }

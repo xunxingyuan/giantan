@@ -48,7 +48,7 @@
     margin-bottom: 5rem;
 }
 .aboutIntro .introBox .intro{
-    padding: 0 10%;
+    /* padding: 0 10%; */
     display: block;
     line-height: 1.7;
     color: #666;

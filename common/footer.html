@@ -2,51 +2,25 @@
         <div class="footerInner contain">
             <div class="msg">
                 <div class="msgtotal">
-                    <div class="footlogo"></div>
-                    <p class="flex"><span class="icon mail"></span>songmin@giantan.com</p>
-                    <p class="flex"><span class="icon phone"></span>020-89269210</p>
-                    <p class="flex"><span class="icon location"></span>广州市海珠区广州大道南788号广一园区A7极天信息</p>
-                    <!-- <div class="contact">
-                                <p>社交</p>
-                            </div> -->
-                </div>
-                <div class="listItem">
-                    <p class="listTitle">产品</p>
-                    <a>G1Brain</a>
-                    <a>功能</a>
-                    <a>价格</a>
-                    <a>场景</a>
-                    <a>更新日志</a>
-                </div>
-                <div class="listItem">
-                    <p class="listTitle">解决方案</p>
-                    <a>智能客服</a>
-                    <a>出版传媒</a>
-                    <a>运营商客服工单</a>
-                    <a>行业知识服务</a>
-                    <a>智能在线推广平台</a>
-                </div>
-                <div class="listItem">
-                    <p class="listTitle">公司介绍</p>
-                    <a>关于我们</a>
-                    <a>核心理念</a>
-                    <a>发展里程</a>
-                    <a>荣誉资质</a>
-                    <a>媒体报道</a>
-                </div>
-            </div>
-            <div class="bootPart">
-                <div class="flex">
-                    <p>Copyright ©2018 广州极天信息技术股份有限公司</p>
-                    <div class="icon wechat">
-                        <div class="codeBox">
-                            <img src="../src/QRcode.png" />
-                            <p>微信公众号</p>
-                        </div>
+                    <div class="flex" style="margin-bottom:1.5rem;">
+                            <div class="footlogo"></div>
+                            <div class="line"></div>
+                            <p class="purpose">让商业与服务更智能</p>
+                    </div>
+                    <p class="flex">官方邮箱：songmin@giantan.com</p>
+                    <p class="flex">商务邮箱：xiejing@giantan.com</p>
+                    <p class="flex">商务咨询：020-89269210</p>
+                    <div class="flex">
+                        <p>联系地址：广州市海珠区广州大道南788号广一园区A7极天信息</p>
+                        <div class='bootPart'><span>Copyright ©2018 广州极天信息技术股份有限公司</span> <span>|</span> 粤ICP备14048300号-1 粤ICP备14048300号-3</div>
                     </div>
                 </div>
-                <p>粤ICP备14048300号-1 粤ICP备14048300号-3</p>
+                
             </div>
+            <!-- <div class="bootPart">
+
+                
+            </div> -->
         </div>
     </footer>
 
@@ -66,14 +40,24 @@
         justify-content: center;
     }
     footer .bootPart {
-        padding: 1rem 0;
-        border-top: solid 1px #fff;
-        margin-top: 1rem;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         color: #666;
+        margin-left: 6rem;
+    }
+    footer .bootPart span{
+        margin-right: 1rem;
+    }
+
+    footer .line{
+        height: 2rem;
+        width: 1px;
+        background: #fff;
+        margin: 0 1.5rem;
+    }
+    footer .purpose{
+        font-size: 18px;
+        color: #fff;
     }
 
     footer .msg {
