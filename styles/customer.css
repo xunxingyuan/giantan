@@ -1,9 +1,28 @@
 
 .bannerTop{
-    background: url('../src/customer/banner_3.jpg') no-repeat;
+    background: url('../src/new/profession/bg.png') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
+
+.searchTop{
+    background: url('../src/new/search/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+
+.orderTop{
+    background: url('../src/new/order/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+
+.mediaTop{
+    background: url('../src/new/media/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+
 .sceneImg{
     width: 100%;
     height: auto;
@@ -12,7 +31,8 @@
 }
 
 .feather {
-    padding: 5% 0;
+    margin-bottom: 11rem;
+    margin-top: 5rem;
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -23,24 +43,29 @@
 .feather .title {
     font-size: 2rem;
     margin: 2rem 0;
+    color: #333;
 }
 .feather .intro{
     line-height: 2rem;
     color: #666;
 }
-.featherIntro{
-    padding-left: 10%;
-    padding-right: 10%;
+.featherIntro .leftIntro{
+    text-align: left;
+    width: 100%;
 }
 .featherIntro .bgPart{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 11rem;
+    margin-top: 5rem;
 }
 .featherIntro .bgPart .introBox{
     text-align: center;
     flex: 1;
     padding: 0 1.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 .featherIntro .bgPart .introBox .title{
     font-size: 20px;
@@ -51,58 +76,25 @@
     font-size: 14px;
 }
 
-/* .feather .list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.feather .list .left {
-    width: 48%;
-    margin-right: 4%;
-}
-
-.feather .list .right {
-    width: 48%;
-}
-
-.feather .list .listBlock {
-    display: flex;
-    height: 5rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    background: rgba(231, 231, 231,0.2);
-    border-radius: 2px;
-    box-shadow: 0px 8px 26px 0px rgba(93, 93, 93, 0.2);
-}
-.feather .list .listBlock .number{
-    margin: 0 1rem;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 1.5rem;
-    background: linear-gradient(135deg, #fafafa, #eee);
-    position: relative;
-    overflow: hidden;
-}
-.feather .list .listBlock .number::after{
-    content: '';
-    width: 3rem;
+.featherIntro .bgPart .introBox .introImg{
+    width: auto;
     height: 4rem;
-    background: #fafafa;
-    transform: rotate(45deg);
-    position: absolute;
-    right: -1.1rem;
-    top: 0.9rem;
-} */
+    /* border: solid 1px #ddd; */
+}
+.featherIntro .bgPart .introBox .introImg img{
+    height: 4rem;
+    width: auto;
+}
+
 
 .corePart{
     background: #F0F4F9;
-    padding: 5% 0;
+    padding: 6rem 0;
     text-align: center;
 }
 .corePart .title{
     font-size: 2rem;
-    margin: 2rem 0;
+    margin-bottom: 5rem;
 }
 .corePart .coreBox{
     display: flex;
@@ -114,9 +106,10 @@
     display: flex;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 1rem;
 }
 .corePart .coreBox .coreBlock .icon{
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 .corePart .coreBox .coreBlock .sTitle{
     font-size: 18px;
@@ -132,7 +125,7 @@
 
 .corePart .coreBox .coreBlock .icon{
     display: block;
-    background: url('../src/icon.png');
+    /* background: url('../src/icon.png'); */
     width: 50px;
     height: 50px;
     min-width: 50px;
@@ -246,3 +239,12 @@
     padding: 0 2rem;
 }
 
+
+.introBg{
+    background: url(../../src/new/media/example.png);
+    background-size: cover;
+}
+.introBg .title{
+    color: #fff;
+    margin-bottom: 3rem;
+}

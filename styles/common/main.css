@@ -211,8 +211,12 @@ a{
 .grayBox .innerBox .boxItem .leftImg{
     flex: 5;
     height: 30rem;
-    border: solid 1px #ddd;
+    /* border: solid 1px #ddd; */
     margin-right: 4rem;
+}
+.grayBox .innerBox .boxItem .leftImg img{
+    height: 30rem;
+    width: auto;
 }
 .grayBox .innerBox .boxItem .itemIntro{
     flex: 4;
@@ -237,9 +241,89 @@ a{
 .grayBox .innerBox .boxItem .halfPart .itemIcon{
     width: 3rem;
     height: 3rem;
-    border: solid 1px #ddd;
+    /* border: solid 1px #ddd; */
     margin-right: 2rem;
+}
+.grayBox .innerBox .boxItem .halfPart .itemIcon img{
+    height: 3rem;
+    width: auto;
 }
 .grayBox .innerBox .boxItem .halfPart .itemIntro{
     color: #333333;
 }
+
+.commonBox{
+    padding: 7rem 0;
+}
+
+.commonBox .title{
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.commonBox  .titleIntro{
+    color: #fff;
+    text-align: center;
+}
+.commonBox .commonItem{
+    display: flex;
+    flex-wrap: wrap;
+}
+.commonBox .commonItem .itemBlock{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.commonBox .commonItem .itemBlock .icon{
+    width: 3rem;
+    height: 3rem;
+    /* border: solid 1px #ddd; */
+    margin-right: 1rem;
+}
+.commonBox .commonItem .itemBlock .icon img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.commonBox .commonItem .part1{
+    width: 35%;
+}
+.commonBox .commonItem .part2{
+    width: 30%;
+    padding: 0 2rem;
+}
+.commonBox .commonItem .part3{
+    width: 35%;
+}
+
+.commonBox .commonItem  .partBlock{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+.commonBox .commonItem  .partBlock .number{
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    /* border: solid 1px #ddd; */
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: #3784F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commonBox .commonItem  .partBlock .partContent{
+    text-align: left;
+}
+.commonBox .commonItem  .partBlock .partContent .partTitle{
+    color: #333;
+    line-height: 3rem;
+}
+.commonBox .commonItem  .partBlock .partContent .partIntro{
+    color: #666;
+    font-size: 14px;
+}
+

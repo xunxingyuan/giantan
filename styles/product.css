@@ -40,7 +40,7 @@
 }
 
 .bannerTop {
-    background: url('../src/product/banner.png') no-repeat;
+    background: url('../src/new/product/bg.png') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
@@ -89,8 +89,9 @@
 }
 
 .productIntro .icon {
-    font-size: 80px;
-    color: #9AC7FB;
+    display: flex;
+    align-items: center;
+    /* color: #9AC7FB; */
     /* margin-top: 3rem; */
 }
 
@@ -108,7 +109,7 @@
     padding: 2rem;
     height: 31rem;
     width: 18rem;
-    box-shadow: 0 0 40px #999;
+    box-shadow: 0 0 10px #999;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -120,13 +121,16 @@
 }
 
 .productIntro .introBox .introContain .introImg {
-    width: 100px;
+    width: auto;
     height: 100px;
     min-height: 100px;
-    border: solid 1px #ddd;
+    /* border: solid 1px #ddd; */
     margin: 3rem 0;
 }
-
+.productIntro .introBox .introContain .introImg img{
+    width: auto;
+    height: 100px;
+}
 
 .productIntro .introBox .introContain .itemTitle {
     font-size: 16px;
