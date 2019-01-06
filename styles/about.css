@@ -41,6 +41,11 @@
 
 .aboutIntro .introBox{
     padding: 5% 0;
+    width: 100%;
+}
+.aboutIntro .introBox .introBoxContain{
+    display: flex;
+    width: 100%;
 }
 .aboutIntro .introBox .title{
     font-size: 2rem;

@@ -58,6 +58,7 @@
     justify-content: space-between;
     margin-bottom: 11rem;
     margin-top: 5rem;
+    width: 100%;
 }
 .featherIntro .bgPart .introBox{
     text-align: center;
@@ -74,6 +75,8 @@
 .featherIntro .bgPart .introBox span{
     color: #666;
     font-size: 14px;
+    width: 100%;
+    display: inline-block;
 }
 
 .featherIntro .bgPart .introBox .introImg{

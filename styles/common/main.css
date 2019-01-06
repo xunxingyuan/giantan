@@ -165,6 +165,9 @@ a{
     cursor: pointer;
     
 }
+.commonBtn a{
+    color: #fff;
+}
 
 .normalBtn{
     width: 11rem;
