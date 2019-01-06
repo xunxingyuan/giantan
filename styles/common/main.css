@@ -177,6 +177,9 @@ a{
     cursor: pointer;
     border: solid 2px #fff;
 }
+.normalBtn a{
+    color: #fff;
+}
 
 .grayBox{
     background: #F0F4F9;
