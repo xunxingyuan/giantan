@@ -1,22 +1,29 @@
-.banner , .company, .feature, .productBox, .cloud{
+.banner,
+.company,
+.feature,
+.productBox,
+.cloud {
     text-align: center;
 }
-.title{
+
+.title {
     font-size: 32px;
 }
-.intro{
+
+.intro {
     font-size: 16px;
     color: #999;
     padding: 1rem 0;
 }
 
-#paricleBg{
+#paricleBg {
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    opacity: 0.4;
 }
 
 
@@ -30,7 +37,7 @@
     justify-content: center;
 }
 
-.bannerText{
+.bannerText {
     z-index: 11;
     height: 5rem;
     margin-top: -2.5rem;
@@ -54,7 +61,7 @@
 }
 
 .bannerText .bannerIntro {
-    font-size:  2rem;
+    font-size: 2rem;
     padding: 1rem 0;
 }
 
@@ -68,34 +75,39 @@
     padding-top: 4rem;
     /* padding: 0 15%; */
 }
-.cornerContain{
+
+.cornerContain {
     position: relative;
 }
 
-.cornerContain .leftConer,.RightConer {
-    height: 6rem;
+.cornerContain .leftConer,
+.RightConer {
+    height: 96px;
     width: 100%;
     position: absolute;
     top: -6rem;
-    background-image: radial-gradient(at 50% 0%, 
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 71%,
-    #fff 0%
-    );
+    background: url('../src/new/home/cover.png');
+    background-size: 100% 100%;
+    /* background-image: radial-gradient(at 50% 0%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 71%,
+        #fff 0%); */
 
     /* background: linear-gradient(to bottom right, transparent, transparent 70%, #fff); */
 }
-.cornerContain .leftConer{
+
+.cornerContain .leftConer {
     left: 0;
 }
-.cornerContain .RightConer{
+
+.cornerContain .RightConer {
     right: 0;
 }
 
 
 .introList .introItem {
     padding: 0 1rem 3rem 1rem;
-    box-shadow:0px 2px 4px 0px rgba(187,187,187,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(187, 187, 187, 0.5);
     display: flex;
     flex-flow: column;
 }
@@ -112,7 +124,8 @@
     padding-top: 1rem;
     border-top: solid 2px #0378F5;
 }
-.introList .introItem .three{
+
+.introList .introItem .three {
     width: 6rem;
 }
 
@@ -212,12 +225,13 @@
     box-shadow: 0 0 2px 2px #92D2FB;
     z-index: 100;
 }
-.feature .animateBox  .pointCenter1{
+
+.feature .animateBox .pointCenter1 {
     left: 484px;
     bottom: 281px;
 }
 
-.feature .animateBox  .pointCenter2{
+.feature .animateBox .pointCenter2 {
     left: 542px;
     bottom: 190px;
 }
@@ -281,9 +295,11 @@
     0% {
         margin-left: -40%;
     }
+
     50% {
         margin-left: 30%;
     }
+
     100% {
         margin-left: 60%;
     }
@@ -293,11 +309,13 @@
     0% {
         transform: rotate(34deg);
     }
+
     50% {
         left: 563px;
         bottom: 167px;
         transform: rotate(24deg);
     }
+
     100% {
         left: 585px;
         bottom: 153px;
@@ -306,34 +324,42 @@
 }
 
 .productBox {
-    background: #142132;
+    background-image: url('../src/new/home/bg3.jpg');
+    background-image: url('../src/new/home/bg2.jpg');
+    background-image: url('../src/new/home/bg1.jpg');
+    background-image: url('../src/new/home/bg.jpg');
+    background-size: cover;
 }
-.productBox .title{
+
+.productBox .title {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.productBox  .smallTitle{
+
+.productBox .smallTitle {
     text-align: left;
     color: #fff;
     margin-bottom: 1rem;
 }
 
-.productBox .productContent{
+.productBox .productContent {
     color: #D9D9D9;
 }
-.productBox .changeBox{
+
+.productBox .changeBox {
     display: flex;
 }
 
-.productBox .changeBox .ctrl{
+.productBox .changeBox .ctrl {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     padding: 10rem 0;
 }
-.productBox .changeBox .ctrl .ctrlItem{
+
+.productBox .changeBox .ctrl .ctrlItem {
     /* margin: 0 2rem; */
     /* padding: 1rem; */
     width: 16rem;
@@ -345,42 +371,48 @@
     cursor: pointer;
     padding: 0 2rem;
 }
-.productBox .changeBox .ctrl .ctrlItem:hover{
+
+.productBox .changeBox .ctrl .ctrlItem:hover {
     border-left: solid 2px #2B86F6;
-    background: linear-gradient(to right,#3E4052,transparent);
+    background: linear-gradient(to right, #3E4052, transparent);
 }
-.productBox .changeBox .ctrl .active{
+
+.productBox .changeBox .ctrl .active {
     border-left: solid 2px #2B86F6;
-    background: linear-gradient(to right,#3E4052,transparent);
+    background: linear-gradient(to right, #3E4052, transparent);
 }
-.productBox .changeBox .showBox{
+
+.productBox .changeBox .showBox {
     padding: 0 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.productBox .changeBox .showBox .itemBox{
+
+.productBox .changeBox .showBox .itemBox {
     position: relative;
     display: none;
 }
 
-.productBox .changeBox .showBox .itemBox1{
+.productBox .changeBox .showBox .itemBox1 {
     display: block;
 }
 
 
 
-.cloud{
+.cloud {
     padding: 5% 0;
     text-align: center;
     background: url('./../src/index/bg-3_1.png');
     background-repeat: repeat;
     position: relative;
 }
-.cloud .title{
+
+.cloud .title {
     color: #fff;
 }
-.cloud .cloudBoot{
+
+.cloud .cloudBoot {
     height: 261px;
     width: 100%;
     position: absolute;
@@ -391,37 +423,43 @@
     align-items: center;
     justify-content: center;
 }
-.cloud .cloudBox{
+
+.cloud .cloudBox {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cloud .cloudBox .cloudBg{
+
+.cloud .cloudBox .cloudBg {
     width: 918px;
     height: 516px;
     background: url('./../src/index/bg-3_3.png');
     background-size: cover;
 }
-.cloud .cloudBox .cloudIntro{
+
+.cloud .cloudBox .cloudIntro {
     width: 1000px;
     height: 400px;
     margin-left: -718px;
     background: #fff;
-    box-shadow:6px 0px 16px rgba(56,50,55,0.2);
+    box-shadow: 6px 0px 16px rgba(56, 50, 55, 0.2);
     border-radius: 2px;
     text-align: left;
 }
-.cloud .cloudBox .cloudIntro .img{
+
+.cloud .cloudBox .cloudIntro .img {
     height: 300px;
     width: 453px;
     margin-right: 2rem;
     box-shadow: 0 0 4px #999;
 }
-.cloud .cloudBox .cloudIntro .introText .titleSmall{
+
+.cloud .cloudBox .cloudIntro .introText .titleSmall {
     font-size: 24px;
     color: #184EFF;
 }
-.cloud .cloudBox .cloudIntro .introText .btn_blue{
+
+.cloud .cloudBox .cloudIntro .introText .btn_blue {
     font-size: 16px;
     color: #184EFF;
     width: 11rem;

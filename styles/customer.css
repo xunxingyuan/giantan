@@ -1,29 +1,28 @@
-
-.bannerTop{
+.bannerTop {
     background: url('../src/new/profession/bg.png') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
 
-.searchTop{
+.searchTop {
     background: url('../src/new/search/bg.jpg') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
 
-.orderTop{
+.orderTop {
     background: url('../src/new/order/bg.jpg') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
 
-.mediaTop{
+.mediaTop {
     background: url('../src/new/media/bg.jpg') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
 
-.sceneImg{
+.sceneImg {
     width: 100%;
     height: auto;
     max-width: 1065px;
@@ -45,22 +44,26 @@
     margin: 2rem 0;
     color: #333;
 }
-.feather .intro{
+
+.feather .intro {
     line-height: 2rem;
     color: #666;
 }
-.featherIntro .leftIntro{
+
+.featherIntro .leftIntro {
     text-align: left;
     width: 100%;
 }
-.featherIntro .bgPart{
+
+.featherIntro .bgPart {
     display: flex;
     justify-content: space-between;
     margin-bottom: 11rem;
     margin-top: 5rem;
     width: 100%;
 }
-.featherIntro .bgPart .introBox{
+
+.featherIntro .bgPart .introBox {
     text-align: center;
     flex: 1;
     padding: 0 1.5rem;
@@ -68,42 +71,48 @@
     flex-flow: column;
     align-items: center;
 }
-.featherIntro .bgPart .introBox .title{
+
+.featherIntro .bgPart .introBox .title {
     font-size: 20px;
     margin-bottom: 1rem;
 }
-.featherIntro .bgPart .introBox span{
+
+.featherIntro .bgPart .introBox span {
     color: #666;
     font-size: 14px;
     width: 100%;
     display: inline-block;
 }
 
-.featherIntro .bgPart .introBox .introImg{
-    width: auto;
-    height: 4rem;
+.featherIntro .bgPart .introBox .introImg {
+    width: 100px;
+    height: 100px;
     /* border: solid 1px #ddd; */
 }
-.featherIntro .bgPart .introBox .introImg img{
-    height: 4rem;
-    width: auto;
+
+.featherIntro .bgPart .introBox .introImg img {
+    height: 100px;
+    width: 100px;
 }
 
 
-.corePart{
+.corePart {
     background: #F0F4F9;
     padding: 6rem 0;
     text-align: center;
 }
-.corePart .title{
+
+.corePart .title {
     font-size: 2rem;
     margin-bottom: 5rem;
 }
-.corePart .coreBox{
+
+.corePart .coreBox {
     display: flex;
     flex-wrap: wrap;
 }
-.corePart .coreBox .coreBlock{
+
+.corePart .coreBox .coreBlock {
     width: 50%;
     padding: 1rem;
     display: flex;
@@ -111,22 +120,25 @@
     text-align: left;
     margin-bottom: 1rem;
 }
-.corePart .coreBox .coreBlock .icon{
+
+.corePart .coreBox .coreBlock .icon {
     margin-right: 2rem;
 }
-.corePart .coreBox .coreBlock .sTitle{
+
+.corePart .coreBox .coreBlock .sTitle {
     font-size: 18px;
     margin-bottom: 0.5rem;
     color: #333;
     font-weight: 600;
 }
-.corePart .coreBox .coreBlock span{
+
+.corePart .coreBox .coreBlock span {
     color: #666;
     font-size: 14px;
     line-height: 1.6;
 }
 
-.corePart .coreBox .coreBlock .icon{
+.corePart .coreBox .coreBlock .icon {
     display: block;
     /* background: url('../src/icon.png'); */
     width: 50px;
@@ -134,44 +146,52 @@
     min-width: 50px;
 }
 
-.corePart .coreBox .coreBlock .question{
+.corePart .coreBox .coreBlock .question {
     background-position: -4px -143px;
 }
-.corePart .coreBox .coreBlock .service{
+
+.corePart .coreBox .coreBlock .service {
     background-position: -4px -201px;
 }
-.corePart .coreBox .coreBlock .data{
+
+.corePart .coreBox .coreBlock .data {
     background-position: -4px -263px;
 }
-.corePart .coreBox .coreBlock .scene{
+
+.corePart .coreBox .coreBlock .scene {
     background-position: -4px -322px;
 }
-.corePart .coreBox .coreBlock .talk{
+
+.corePart .coreBox .coreBlock .talk {
     background-position: -4px -383px;
 }
-.corePart .coreBox .coreBlock .recommend{
+
+.corePart .coreBox .coreBlock .recommend {
     background-position: -4px -443px;
 }
 
-.corePart .valueBox{
+.corePart .valueBox {
     display: flex;
     justify-content: space-around;
 }
 
-.corePart .valueBox .item{
+.corePart .valueBox .item {
     height: 8rem;
 }
-.corePart .valueBox .item:nth-child(2){
+
+.corePart .valueBox .item:nth-child(2) {
     margin: 0 1rem;
 }
-.corePart .valueBox .item p{
+
+.corePart .valueBox .item p {
     height: 4rem;
     font-size: 16px;
     color: #333;
     display: flex;
     align-items: center;
 }
-.corePart .valueBox .item .icon{
+
+.corePart .valueBox .item .icon {
     width: 50px;
     height: 50px;
     background: url('../src/icon.png');
@@ -179,36 +199,39 @@
     margin-right: 10px;
 }
 
-.scene{
+.scene {
     padding: 0;
     position: relative;
     overflow: hidden;
 }
 
-.scene .topPart{
+.scene .topPart {
     height: 20rem;
     width: 100%;
-    background:linear-gradient(90deg,#0080f7,#00c4fd);
+    background: linear-gradient(90deg, #0080f7, #00c4fd);
     display: flex;
     /* align-items: center; */
     justify-content: center;
     color: #fff;
 }
-.scene .topPart .title{
+
+.scene .topPart .title {
     margin-top: 4rem;
 }
-.scene .map{
+
+.scene .map {
     height: 40rem;
 }
 
-.scene .midScene{
+.scene .midScene {
     position: absolute;
     left: 50%;
     top: 10rem;
     height: 25rem;
     width: 50%;
 }
-.scene .midScene .midBlock{
+
+.scene .midScene .midBlock {
     width: 100%;
     height: 100%;
     display: flex;
@@ -218,36 +241,39 @@
     top: 0;
 }
 
-.scene .midScene .sceneBlock{
+.scene .midScene .sceneBlock {
     height: 80%;
     width: 40rem;
     min-width: 40rem;
     margin-right: 1rem;
     background: #fff;
-    box-shadow:0px 6px 14px 0px rgba(190,190,190,0.2);
+    box-shadow: 0px 6px 14px 0px rgba(190, 190, 190, 0.2);
     padding: 2rem;
     border-radius: 4px;
     cursor: pointer;
 }
-.scene .midScene .active{
+
+.scene .midScene .active {
     height: 90%;
 }
 
-.scene .midScene .sceneBlock .sceneTitle{
+.scene .midScene .sceneBlock .sceneTitle {
     font-size: 20px;
     margin: 1rem 0;
 }
-.scene .midScene .sceneBlock span{
+
+.scene .midScene .sceneBlock span {
     color: #666;
     padding: 0 2rem;
 }
 
 
-.introBg{
+.introBg {
     background: url(../../src/new/media/example.png);
     background-size: cover;
 }
-.introBg .title{
+
+.introBg .title {
     color: #fff;
     margin-bottom: 3rem;
 }
