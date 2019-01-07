@@ -35,7 +35,7 @@
 }
 
 .aboutMap {
-    height: 700px;
+    /* height: 700px; */
     display: none;
 }
 
@@ -324,4 +324,29 @@
 .aboutMap .mapBox .gz .icon {
     right: 33px;
     bottom: -23px;
+}
+
+
+.aboutMap .newMap {
+    padding: 5% 0;
+}
+
+.aboutMap .newMap .intro {
+    width: 100%;
+    padding: 0 20%;
+}
+
+.aboutMap .newMap .intro .introTitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.aboutMap .newMap .intro .introText {
+    color: #666;
+    line-height: 1.7
+}
+
+.aboutMap .newMap .mapContain {
+    margin-top: 2rem;
 }
