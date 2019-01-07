@@ -16,22 +16,22 @@ body {
 }
 
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-.flexCenter{
+.flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.bannerTop{
+.bannerTop {
     padding-top: 5rem;
     display: flex;
     align-items: center;
@@ -41,51 +41,56 @@ a{
     text-align: center;
 }
 
-.bannerTop .bannerBlock{
+.bannerTop .bannerBlock {
     width: 100%;
 }
-.bannerTop .title{
+
+.bannerTop .title {
     font-size: 3rem;
     margin-bottom: 1.8rem;
 }
-.bannerTop .intro{
+
+.bannerTop .intro {
     font-size: 14px;
     padding: 0 20%;
     display: block;
     line-height: 1.8;
 }
 
-.midContent{
+.midContent {
     /* height: 700px; */
     padding: 5% 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.midContent .title{
+
+.midContent .title {
     text-align: center;
     width: 100%;
     font-size: 2rem;
 }
-.midContent .img{
+
+.midContent .img {
     padding: 1rem;
     flex: 1;
     height: 300px;
 }
-.midContent .img .imgBox{
+
+.midContent .img .imgBox {
     width: 100%;
     height: 100%;
     text-align: center;
     /* border: solid 1px #ddd; */
 }
 
-.midContent .img .imgBox img{
+.midContent .img .imgBox img {
     width: 100%;
     height: auto;
     max-width: 480px;
 }
 
-.midContent .text{
+.midContent .text {
     flex: 1;
     padding: 1rem;
     color: #333;
@@ -96,47 +101,51 @@ a{
     flex-flow: column;
     align-items: center;
 }
+
 /* .midContent .leftText{
     text-align: right;
 } */
-.midContent .text p{
+.midContent .text p {
     font-size: 1.5rem;
     color: RGBA(51, 51, 51, 1);
     margin-bottom: 1rem;
     width: 80%;
 }
 
-.midContent .text span{
+.midContent .text span {
     font-size: 14px;
     color: RGBA(102, 102, 102, 1);
     width: 80%;
 }
 
-.company{
+.company {
     width: 100%;
     text-align: center;
     padding: 5% 0;
     /* padding: 7% 15%; */
 }
-.company .title{
+
+.company .title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.company .second{
+.company .second {
     padding: 1rem 0;
 }
 
-.company .companyList{
+.company .companyList {
     display: flex;
     flex-wrap: wrap;
 }
-.company .companyList .info{
+
+.company .companyList .info {
     width: 25%;
     height: 140px;
     padding: 1rem;
 }
-.company .companyList .info .inner{
+
+.company .companyList .info .inner {
     width: 100%;
     height: 100%;
     display: flex;
@@ -144,36 +153,38 @@ a{
     justify-content: center;
     /* border: solid 1px #ddd; */
 }
-.company .companyList .info .inner img{
-    width: 168px;
+
+.company .companyList .info .inner img {
+    width: 200px;
     height: 70px;
 }
 
-.contain{
+.contain {
     max-width: 1200px;
     min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.commonBtn{
+.commonBtn {
     width: 11rem;
     height: 3rem;
-    background:rgba(43,134,246,1);
-    box-shadow:0rem 0rem 0rem 0rem rgba(29,106,200,0.8);
+    background: rgba(43, 134, 246, 1);
+    box-shadow: 0rem 0rem 0rem 0rem rgba(29, 106, 200, 0.8);
     border-radius: 3px;
     line-height: 3rem;
     color: #fff;
     font-size: 1rem;
     text-align: center;
     cursor: pointer;
-    
+
 }
-.commonBtn a{
+
+.commonBtn a {
     color: #fff;
 }
 
-.normalBtn{
+.normalBtn {
     width: 11rem;
     height: 3rem;
     border-radius: 3px;
@@ -184,136 +195,158 @@ a{
     cursor: pointer;
     border: solid 2px #fff;
 }
-.normalBtn a{
+
+.normalBtn a {
     color: #fff;
 }
 
-.grayBox{
+.grayBox {
     background: #F0F4F9;
     padding: 6rem 0;
 }
-.grayBox .innerBox{
+
+.grayBox .innerBox {
     max-width: 1200px;
     min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
-.grayBox .innerBox .boxTitle{
+
+.grayBox .innerBox .boxTitle {
     color: #333;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
 }
-.grayBox .innerBox .boxSmallTitle{
+
+.grayBox .innerBox .boxSmallTitle {
     font-size: 1rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
-.grayBox .innerBox .boxContent{
+
+.grayBox .innerBox .boxContent {
     color: #666666;
     font-size: 1rem;
     text-align: center;
 }
-.grayBox .innerBox .boxItem{
+
+.grayBox .innerBox .boxItem {
     display: flex;
     margin-top: 4rem;
 }
-.grayBox .innerBox .boxItem .leftImg{
+
+.grayBox .innerBox .boxItem .leftImg {
     flex: 5;
     height: 30rem;
     /* border: solid 1px #ddd; */
     margin-right: 4rem;
 }
-.grayBox .innerBox .boxItem .leftImg img{
+
+.grayBox .innerBox .boxItem .leftImg img {
     height: 30rem;
     width: auto;
 }
-.grayBox .innerBox .boxItem .itemIntro{
+
+.grayBox .innerBox .boxItem .itemIntro {
     flex: 4;
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding-right: 1rem;
 }
-.grayBox .innerBox .boxItem .itemIntro .boxContent{
+
+.grayBox .innerBox .boxItem .itemIntro .boxContent {
     text-align: left;
 }
 
 
-.grayBox .innerBox .boxItem .halfPart{
+.grayBox .innerBox .boxItem .halfPart {
     flex: 1;
 }
-.grayBox .innerBox .boxItem .halfPart .halfItem{
+
+.grayBox .innerBox .boxItem .halfPart .halfItem {
     display: flex;
     margin-bottom: 5rem;
     padding: 0 1rem;
 }
-.grayBox .innerBox .boxItem .halfPart .itemIcon{
+
+.grayBox .innerBox .boxItem .halfPart .itemIcon {
     width: 3rem;
     height: 3rem;
     /* border: solid 1px #ddd; */
     margin-right: 2rem;
 }
-.grayBox .innerBox .boxItem .halfPart .itemIcon img{
+
+.grayBox .innerBox .boxItem .halfPart .itemIcon img {
     height: 3rem;
     width: auto;
 }
-.grayBox .innerBox .boxItem .halfPart .itemIntro{
+
+.grayBox .innerBox .boxItem .halfPart .itemIntro {
     color: #333333;
 }
 
-.commonBox{
+.commonBox {
     padding: 7rem 0;
 }
 
-.commonBox .title{
+.commonBox .title {
     font-size: 2rem;
     color: #333;
     text-align: center;
     margin-bottom: 5rem;
 }
-.commonBox  .titleIntro{
+
+.commonBox .titleIntro {
     color: #fff;
     text-align: center;
 }
-.commonBox .commonItem{
+
+.commonBox .commonItem {
     display: flex;
     flex-wrap: wrap;
 }
-.commonBox .commonItem .itemBlock{
+
+.commonBox .commonItem .itemBlock {
     width: 50%;
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
 }
-.commonBox .commonItem .itemBlock .icon{
+
+.commonBox .commonItem .itemBlock .icon {
     width: 3rem;
     height: 3rem;
     /* border: solid 1px #ddd; */
     margin-right: 1rem;
 }
-.commonBox .commonItem .itemBlock .icon img{
+
+.commonBox .commonItem .itemBlock .icon img {
     width: 3rem;
     height: 3rem;
 }
 
-.commonBox .commonItem .part1{
-    width: 35%;
-}
-.commonBox .commonItem .part2{
-    width: 30%;
-    padding: 0 2rem;
-}
-.commonBox .commonItem .part3{
+.commonBox .commonItem .part1 {
     width: 35%;
 }
 
-.commonBox .commonItem  .partBlock{
+.commonBox .commonItem .part2 {
+    width: 30%;
+    padding: 0 2rem;
+}
+
+.commonBox .commonItem .part3 {
+    width: 35%;
+}
+
+.commonBox .commonItem .partBlock {
     display: flex;
     align-items: flex-start;
     margin-bottom: 3rem;
 }
-.commonBox .commonItem  .partBlock .number{
+
+.commonBox .commonItem .partBlock .number {
     width: 3rem;
     height: 3rem;
     min-width: 3rem;
@@ -325,15 +358,17 @@ a{
     align-items: center;
     justify-content: center;
 }
-.commonBox .commonItem  .partBlock .partContent{
+
+.commonBox .commonItem .partBlock .partContent {
     text-align: left;
 }
-.commonBox .commonItem  .partBlock .partContent .partTitle{
+
+.commonBox .commonItem .partBlock .partContent .partTitle {
     color: #333;
     line-height: 3rem;
 }
-.commonBox .commonItem  .partBlock .partContent .partIntro{
+
+.commonBox .commonItem .partBlock .partContent .partIntro {
     color: #666;
     font-size: 14px;
 }
-
