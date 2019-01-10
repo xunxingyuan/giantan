@@ -113,7 +113,7 @@ a {
 }
 
 .midContent .text span {
-    font-size: 14px;
+    font-size: 16px;
     color: RGBA(102, 102, 102, 1);
     width: 80%;
 }
@@ -267,7 +267,7 @@ a {
 
 .grayBox .innerBox .boxItem .halfPart .halfItem {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     padding: 0 1rem;
 }
 

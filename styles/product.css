@@ -137,16 +137,19 @@
 
 .productIntro .introBox .introContain .itemTitle {
     font-size: 16px;
-    align-self: flex-start;
+    align-self: flex-center;
     color: #333;
     margin: 5px 0;
+    width: 10rem;
+    text-align: left;
 }
 
 .productIntro .introBox .introContain .itemContent {
     font-size: 14px;
-    align-self: flex-start;
+    align-self: flex-center;
     text-align: left;
     margin-bottom: 1rem;
+    width: 10rem;
 }
 
 .productIntro .introBox .introContain .itemContent p {

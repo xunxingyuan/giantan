@@ -21,6 +21,9 @@ $(document).ready(function () {
             case (3):
                 $('.productBox').css('background-image', "url(../src/new/home/bg3.jpg)");
                 break;
+            case (4):
+                $('.productBox').css('background-image', "url(../src/new/home/bg4.jpg)");
+                break;
             default:
                 break;
         }

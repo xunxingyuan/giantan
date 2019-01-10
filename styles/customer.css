@@ -52,7 +52,7 @@
 }
 
 .feather .intro {
-    line-height: 2rem;
+    line-height: 1.7;
     color: #666;
 }
 
@@ -88,6 +88,7 @@
     font-size: 14px;
     width: 100%;
     display: inline-block;
+    text-align: left;
 }
 
 .featherIntro .bgPart .introBox .introImg {
