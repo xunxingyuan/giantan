@@ -22,6 +22,12 @@
     height: 31.25vw;
 }
 
+.manageTop {
+    background: url('../src/new/manage/bg.jpg') no-repeat;
+    background-size: cover;
+    height: 31.25vw;
+}
+
 .sceneImg {
     width: 100%;
     height: auto;
