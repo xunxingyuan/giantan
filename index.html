@@ -69,6 +69,7 @@
                     <span class="ctrlItem">智能工单分析解决方案</span>
                     <span class="ctrlItem">智能出版传媒解决方案</span>
                     <span class="ctrlItem">智能搜索解决方案</span>
+                    <span class="ctrlItem">智能行业知识管理解决方案</span>
                 </div>
                 <div class="showBox">
                     <div class="itemBox itemBox1">
@@ -113,6 +114,16 @@
                                 通过相关策略及算法为用户反馈最有价值的信息。极天信息智能搜索解决方案可提供传统的快速检索、相关度排序等功能，还能提供基于用户角色、用户兴趣偏好、内容语义的智能信息化过滤和推送等功能</p>
                         </div>
                         <div class="normalBtn" style="margin-top: 2rem;"><a href="./html/solution_search.html">了解更多</a></div>
+                    </div>
+                    <div class="itemBox itemBox4">
+                        <p class="title">智能行业知识管理解决方案</p>
+                        <!-- <p class="productContent">基于G1Brain打造的AI+行业解决方案</p> -->
+                        <div style="margin-top: 4rem;">
+                            <p class="smallTitle">智能行业知识管理解决方案</p>
+                            <p class="productContent" style="text-align:left;">基于对用户意图的理解，
+                                极天信息利用语义网、知识图谱、机器学习等技术，打造智能行业知识管理解决方案，帮助行业客户实现资源数据的语义化、关联化和可视化，实现基于语义的数据的相互关联及整合，并有效地解决自主、异类、异构和分布的海量数据的知识发现问题。</p>
+                        </div>
+                        <div class="normalBtn" style="margin-top: 2rem;"><a href="./html/solution_manage.html">了解更多</a></div>
                     </div>
                 </div>
             </div>
@@ -194,6 +205,34 @@
         range: 200,
         color: ['#fff']
     });
+
+    function preloadImg(list) {
+        var imgs = arguments[1] || [], //用于存储预加载好的图片资源
+            fn = arguments.callee;
+        if (list.length == 0) {
+            return imgs;
+        }
+        var img = new Image();
+        img.src = list[0];
+        if (img.complete) {
+            imgs.push(img);
+            list.shift();
+            fn(list, imgs);
+        } else {
+            img.onload = function () {
+                imgs.push(img);
+                list.shift();
+                fn(list, imgs);
+            };
+        }
+    }
+    var list = [
+            '../src/new/home/bg.jpg',
+            '../src/new/home/bg1.jpg',
+            '../src/new/home/bg2.jpg',
+            '../src/new/home/bg3.jpg'
+        ],
+        imgs = preloadImg(list);
 </script>
 
 </html>
