@@ -323,12 +323,24 @@
     }
 }
 
-.productBox {
+/* .productBox {
     background-image: url('../src/new/home/bg3.jpg');
     background-image: url('../src/new/home/bg2.jpg');
     background-image: url('../src/new/home/bg1.jpg');
     background-image: url('../src/new/home/bg.jpg');
     background-size: cover;
+} */
+
+.productBox {
+    position: relative;
+}
+
+.productBox .productBg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .productBox .title {
