@@ -115,8 +115,14 @@
         color: #fff;
     }
 
-    .navBox a:hover {
-        color: #184EFF;
+    .navBox .navItem:hover::before {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: RGBA(55, 132, 247, 1);
+        position: absolute;
+        bottom: 0.9rem;
+        left: 25%;
     }
 
     .navBox .active::before {

@@ -303,6 +303,10 @@ a {
     text-align: center;
 }
 
+.commonBox .secondTitle {
+    margin-top: 5rem;
+}
+
 .commonBox .commonItem {
     display: flex;
     flex-wrap: wrap;
@@ -312,7 +316,7 @@ a {
     width: 50%;
     display: flex;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .commonBox .commonItem .itemBlock .icon {
