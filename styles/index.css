@@ -1,3 +1,7 @@
+.animated {
+    animation-duration: 1.5s;
+}
+
 .banner,
 .company,
 .feature,
@@ -333,6 +337,7 @@
 
 .productBox {
     position: relative;
+    background: #666;
 }
 
 .productBox .productBg {

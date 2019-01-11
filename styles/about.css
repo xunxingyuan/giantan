@@ -56,6 +56,37 @@
     margin-bottom: 2rem;
 }
 
+.aboutIntro .introBox .blockLine {
+    display: flex;
+}
+
+.aboutIntro .introBox .blockLine .item {
+    flex: 1;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column;
+    /* margin-bottom: 2rem; */
+    text-align: center;
+}
+
+.aboutIntro .introBox .blockLine .item:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.aboutIntro .introBox .blockLine .item img {
+    width: 60px;
+    height: 60px;
+    /* border: solid 1px #ddd; */
+    margin-bottom: 1rem;
+}
+
+.aboutIntro .introBox .blockLine .item .introText {
+    color: #666;
+    font-size: 14px;
+}
+
 .aboutIntro .introBox .iconText {
     color: #666;
     line-height: 1.7;
