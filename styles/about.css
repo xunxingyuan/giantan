@@ -361,17 +361,19 @@
 
 .aboutMap .newMap {
     padding: 5% 0;
+    width: 100%;
 }
 
 .aboutMap .newMap .intro {
     width: 100%;
-    padding: 0 20%;
+    padding: 5% 30%;
 }
 
 .aboutMap .newMap .intro .introTitle {
     font-size: 24px;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .aboutMap .newMap .intro .introText {

@@ -51,6 +51,7 @@
         width: 146px;
         height: 48px;
         background-image: url("../src/index/logo.png");
+        cursor: pointer;
     }
 
     .navBox {
@@ -143,4 +144,8 @@
             }
         })
     });
+
+    $('.logo').bind('click', function () {
+        window.location = "../index.html"
+    })
 </script>
