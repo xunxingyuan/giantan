@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/common/main.css" />
     <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wV3vcdCSqmZi2t2EdQ81drGHtavwCbCn"></script>
     <script src="../js/jquery/jquery.js"></script>
     <script src="../js/common/main.js"></script>
     <script src="../js/common/animatePart.js"></script>
@@ -39,13 +39,6 @@
         </section>
         <section class="introBox contain" style="padding-top:0;">
             <p class="title" style="margin-bottom:5rem;">我们是谁</p>
-            <!-- <p class="iconText">坚持技术创新至上的核心价值观</p>
-            <p class="iconText">公司创始人及主要人员在语义理解产品领域均从事相关研究超过20余年</p>
-            <p class="iconText">15年专注一件事：语义网及语义计算（自然语言理解）</p>
-            <p class="iconText">核心产品经过众多知名厂商严格评测，广泛应用于诸多行业</p>
-            <p class="iconText">与中山大学软件学院合作成立中大极天智能信息处理实验室</p>
-            <p class="iconText">与合作伙伴共建共赢的生态</p> -->
-
             <div class="blockLine">
                 <div class="item animatePart">
                     <img src="../src/new/about/1.png" />
@@ -83,15 +76,7 @@
 
     </section>
     <section class="aboutMap flexCenter contain">
-        <!-- <div class="mapBox">
-            <img src="../src/map.png" />
-            <div class="location gz">
-                <p class="locationTitle">广州总部</p>
-                <p class="intro">电话：020-89269210</p>
-                <p class="intro">地址：广州市海珠区广州大道南788号广一园区A7极天信息</p>
-                <span class="icon"></span>
-            </div>
-        </div> -->
+
         <div class="newMap">
             <div class="intro">
                 <p class="introTitle">广州极天信息技术股份有限公司</p>
@@ -99,10 +84,9 @@
                 <p class="introText">商务咨询：020-89269210/188-1926-8277</p>
                 <p class="introText">总部地址：广州市海珠区广州大道南788号广一园区A7极天信息</p>
             </div>
-            <!-- <div class="mapContain">
-                <img src="../src/new/about/map.png" />
-            </div> -->
+            <div id="allmap"></div>
         </div>
+
     </section>
     <section class="footerBox"></section>
 </body>
@@ -118,8 +102,30 @@
             $('.aboutBox .contact').addClass('active')
             $('.aboutMap').css('display', 'flex')
             $('.aboutIntro').css('display', 'none')
+            init()
         }
     })
+
+    function init() {
+        var map = new BMap.Map("allmap", {
+            enableMapClick: false
+        }); // 创建Map实例
+        var point = new BMap.Point(113.320, 23.094); // 创建点坐标
+        map.centerAndZoom(point, 16);
+        map.enableScrollWheelZoom();
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: {
+                map: map
+            }
+        });
+        local.search("极天信息", map.getBounds());
+        // var pt = new BMap.Point(113.3204, 23.0952);
+        // var myIcon = new BMap.Icon("../src/new/about/point.png", new BMap.Size(110, 85));
+        // var marker2 = new BMap.Marker(pt, {
+        //     icon: myIcon
+        // }); // 创建标注
+        // map.addOverlay(marker2);
+    }
 </script>
 
 </html>

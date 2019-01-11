@@ -1,5 +1,5 @@
 .bannerTop {
-    background: url('../src/about/banner_2.jpg') no-repeat;
+    background: url('../src/new/about/bg.jpg') no-repeat;
     background-size: cover;
     height: 31.25vw;
 }
@@ -85,6 +85,7 @@
 .aboutIntro .introBox .blockLine .item .introText {
     color: #666;
     font-size: 14px;
+    width: 100%;
 }
 
 .aboutIntro .introBox .iconText {
@@ -93,6 +94,7 @@
     padding-left: 1rem;
     margin-bottom: 10px;
     position: relative;
+
 }
 
 .aboutIntro .introBox .iconText::before {
@@ -362,23 +364,31 @@
 .aboutMap .newMap {
     padding: 5% 0;
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.aboutMap .newMap #allmap {
+    width: 1000px;
+    height: 500px;
 }
 
 .aboutMap .newMap .intro {
-    width: 100%;
-    padding: 5% 30%;
+    width: 28rem;
+    margin-bottom: 3rem;
 }
 
 .aboutMap .newMap .intro .introTitle {
     font-size: 24px;
     color: #333;
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutMap .newMap .intro .introText {
     color: #666;
-    line-height: 1.7
+    line-height: 1.7;
 }
 
 .aboutMap .newMap .mapContain {

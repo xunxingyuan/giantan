@@ -126,7 +126,7 @@
     margin: 0;
     width: 2rem;
     padding-top: 1rem;
-    border-top: solid 2px #0378F5;
+    /* border-top: solid 2px #0378F5; */
 }
 
 .introList .introItem .three {
